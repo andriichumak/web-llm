@@ -1,0 +1,3433 @@
+[
+    {
+        "id": "customer_age",
+        "type": "attribute",
+        "attributes": {
+            "title": "Customer age",
+            "description": "Customer age",
+            "tags": [
+                "Order lines"
+            ],
+            "sourceColumn": "customer_age",
+            "sourceColumnDataType": "STRING"
+        },
+        "relationships": {
+            "dataset": {
+                "data": {
+                    "id": "order_lines",
+                    "type": "dataset"
+                }
+            },
+            "labels": {
+                "data": [
+                    {
+                        "id": "customer_age",
+                        "type": "label"
+                    }
+                ]
+            }
+        },
+        "links": {
+            "self": "https://ach.internal.cloud.gooddata.com/api/v1/entities/workspaces/gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1/attributes/customer_age"
+        },
+        "meta": {
+            "origin": {
+                "originType": "NATIVE",
+                "originId": "gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1"
+            }
+        }
+    },
+    {
+        "id": "customer_city",
+        "type": "attribute",
+        "attributes": {
+            "title": "Customer city",
+            "description": "Customer city",
+            "tags": [
+                "Customer"
+            ],
+            "sourceColumn": "customer_city",
+            "sourceColumnDataType": "STRING"
+        },
+        "relationships": {
+            "defaultView": {
+                "data": {
+                    "id": "customer_city",
+                    "type": "label"
+                }
+            },
+            "dataset": {
+                "data": {
+                    "id": "customer",
+                    "type": "dataset"
+                }
+            },
+            "labels": {
+                "data": [
+                    {
+                        "id": "customer_city",
+                        "type": "label"
+                    },
+                    {
+                        "id": "geo__customer_city__city_pushpin_longitude",
+                        "type": "label"
+                    },
+                    {
+                        "id": "geo__customer_city__city_pushpin_latitude",
+                        "type": "label"
+                    }
+                ]
+            }
+        },
+        "links": {
+            "self": "https://ach.internal.cloud.gooddata.com/api/v1/entities/workspaces/gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1/attributes/customer_city"
+        },
+        "meta": {
+            "origin": {
+                "originType": "NATIVE",
+                "originId": "gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1"
+            }
+        }
+    },
+    {
+        "id": "customer_country",
+        "type": "attribute",
+        "attributes": {
+            "title": "Customer country",
+            "description": "Customer country",
+            "tags": [
+                "Customer"
+            ],
+            "sourceColumn": "customer_country",
+            "sourceColumnDataType": "STRING"
+        },
+        "relationships": {
+            "dataset": {
+                "data": {
+                    "id": "customer",
+                    "type": "dataset"
+                }
+            },
+            "labels": {
+                "data": [
+                    {
+                        "id": "customer_country",
+                        "type": "label"
+                    }
+                ]
+            }
+        },
+        "links": {
+            "self": "https://ach.internal.cloud.gooddata.com/api/v1/entities/workspaces/gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1/attributes/customer_country"
+        },
+        "meta": {
+            "origin": {
+                "originType": "NATIVE",
+                "originId": "gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1"
+            }
+        }
+    },
+    {
+        "id": "customer_created_date.day",
+        "type": "attribute",
+        "attributes": {
+            "title": "Customer created date - Date",
+            "description": "Date",
+            "tags": [
+                "Customer created date"
+            ],
+            "granularity": "DAY"
+        },
+        "relationships": {
+            "dataset": {
+                "data": {
+                    "id": "customer_created_date",
+                    "type": "dataset"
+                }
+            },
+            "labels": {
+                "data": [
+                    {
+                        "id": "customer_created_date.day",
+                        "type": "label"
+                    }
+                ]
+            }
+        },
+        "links": {
+            "self": "https://ach.internal.cloud.gooddata.com/api/v1/entities/workspaces/gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1/attributes/customer_created_date.day"
+        },
+        "meta": {
+            "origin": {
+                "originType": "NATIVE",
+                "originId": "gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1"
+            }
+        }
+    },
+    {
+        "id": "customer_created_date.dayOfMonth",
+        "type": "attribute",
+        "attributes": {
+            "title": "Customer created date - Day of Month",
+            "description": "Generic Day of the Month (D1-D31)",
+            "tags": [
+                "Customer created date"
+            ],
+            "granularity": "DAY_OF_MONTH"
+        },
+        "relationships": {
+            "dataset": {
+                "data": {
+                    "id": "customer_created_date",
+                    "type": "dataset"
+                }
+            },
+            "labels": {
+                "data": [
+                    {
+                        "id": "customer_created_date.dayOfMonth",
+                        "type": "label"
+                    }
+                ]
+            }
+        },
+        "links": {
+            "self": "https://ach.internal.cloud.gooddata.com/api/v1/entities/workspaces/gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1/attributes/customer_created_date.dayOfMonth"
+        },
+        "meta": {
+            "origin": {
+                "originType": "NATIVE",
+                "originId": "gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1"
+            }
+        }
+    },
+    {
+        "id": "customer_created_date.dayOfWeek",
+        "type": "attribute",
+        "attributes": {
+            "title": "Customer created date - Day of Week",
+            "description": "Generic Day of the Week (D1-D7)",
+            "tags": [
+                "Customer created date"
+            ],
+            "granularity": "DAY_OF_WEEK"
+        },
+        "relationships": {
+            "dataset": {
+                "data": {
+                    "id": "customer_created_date",
+                    "type": "dataset"
+                }
+            },
+            "labels": {
+                "data": [
+                    {
+                        "id": "customer_created_date.dayOfWeek",
+                        "type": "label"
+                    }
+                ]
+            }
+        },
+        "links": {
+            "self": "https://ach.internal.cloud.gooddata.com/api/v1/entities/workspaces/gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1/attributes/customer_created_date.dayOfWeek"
+        },
+        "meta": {
+            "origin": {
+                "originType": "NATIVE",
+                "originId": "gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1"
+            }
+        }
+    },
+    {
+        "id": "customer_created_date.dayOfYear",
+        "type": "attribute",
+        "attributes": {
+            "title": "Customer created date - Day of Year",
+            "description": "Generic Day of the Year (D1-D366)",
+            "tags": [
+                "Customer created date"
+            ],
+            "granularity": "DAY_OF_YEAR"
+        },
+        "relationships": {
+            "dataset": {
+                "data": {
+                    "id": "customer_created_date",
+                    "type": "dataset"
+                }
+            },
+            "labels": {
+                "data": [
+                    {
+                        "id": "customer_created_date.dayOfYear",
+                        "type": "label"
+                    }
+                ]
+            }
+        },
+        "links": {
+            "self": "https://ach.internal.cloud.gooddata.com/api/v1/entities/workspaces/gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1/attributes/customer_created_date.dayOfYear"
+        },
+        "meta": {
+            "origin": {
+                "originType": "NATIVE",
+                "originId": "gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1"
+            }
+        }
+    },
+    {
+        "id": "customer_created_date.hour",
+        "type": "attribute",
+        "attributes": {
+            "title": "Customer created date - Hour",
+            "description": "Hour",
+            "tags": [
+                "Customer created date"
+            ],
+            "granularity": "HOUR"
+        },
+        "relationships": {
+            "dataset": {
+                "data": {
+                    "id": "customer_created_date",
+                    "type": "dataset"
+                }
+            },
+            "labels": {
+                "data": [
+                    {
+                        "id": "customer_created_date.hour",
+                        "type": "label"
+                    }
+                ]
+            }
+        },
+        "links": {
+            "self": "https://ach.internal.cloud.gooddata.com/api/v1/entities/workspaces/gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1/attributes/customer_created_date.hour"
+        },
+        "meta": {
+            "origin": {
+                "originType": "NATIVE",
+                "originId": "gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1"
+            }
+        }
+    },
+    {
+        "id": "customer_created_date.hourOfDay",
+        "type": "attribute",
+        "attributes": {
+            "title": "Customer created date - Hour of Day",
+            "description": "Generic Hour of the Day(H1-H24)",
+            "tags": [
+                "Customer created date"
+            ],
+            "granularity": "HOUR_OF_DAY"
+        },
+        "relationships": {
+            "dataset": {
+                "data": {
+                    "id": "customer_created_date",
+                    "type": "dataset"
+                }
+            },
+            "labels": {
+                "data": [
+                    {
+                        "id": "customer_created_date.hourOfDay",
+                        "type": "label"
+                    }
+                ]
+            }
+        },
+        "links": {
+            "self": "https://ach.internal.cloud.gooddata.com/api/v1/entities/workspaces/gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1/attributes/customer_created_date.hourOfDay"
+        },
+        "meta": {
+            "origin": {
+                "originType": "NATIVE",
+                "originId": "gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1"
+            }
+        }
+    },
+    {
+        "id": "customer_created_date.minute",
+        "type": "attribute",
+        "attributes": {
+            "title": "Customer created date - Minute",
+            "description": "Minute",
+            "tags": [
+                "Customer created date"
+            ],
+            "granularity": "MINUTE"
+        },
+        "relationships": {
+            "dataset": {
+                "data": {
+                    "id": "customer_created_date",
+                    "type": "dataset"
+                }
+            },
+            "labels": {
+                "data": [
+                    {
+                        "id": "customer_created_date.minute",
+                        "type": "label"
+                    }
+                ]
+            }
+        },
+        "links": {
+            "self": "https://ach.internal.cloud.gooddata.com/api/v1/entities/workspaces/gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1/attributes/customer_created_date.minute"
+        },
+        "meta": {
+            "origin": {
+                "originType": "NATIVE",
+                "originId": "gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1"
+            }
+        }
+    },
+    {
+        "id": "customer_created_date.minuteOfHour",
+        "type": "attribute",
+        "attributes": {
+            "title": "Customer created date - Minute of Hour",
+            "description": "Generic Minute of the Hour(MI1-MI60)",
+            "tags": [
+                "Customer created date"
+            ],
+            "granularity": "MINUTE_OF_HOUR"
+        },
+        "relationships": {
+            "dataset": {
+                "data": {
+                    "id": "customer_created_date",
+                    "type": "dataset"
+                }
+            },
+            "labels": {
+                "data": [
+                    {
+                        "id": "customer_created_date.minuteOfHour",
+                        "type": "label"
+                    }
+                ]
+            }
+        },
+        "links": {
+            "self": "https://ach.internal.cloud.gooddata.com/api/v1/entities/workspaces/gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1/attributes/customer_created_date.minuteOfHour"
+        },
+        "meta": {
+            "origin": {
+                "originType": "NATIVE",
+                "originId": "gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1"
+            }
+        }
+    },
+    {
+        "id": "customer_created_date.month",
+        "type": "attribute",
+        "attributes": {
+            "title": "Customer created date - Month/Year",
+            "description": "Month and Year (12/2020)",
+            "tags": [
+                "Customer created date"
+            ],
+            "granularity": "MONTH"
+        },
+        "relationships": {
+            "dataset": {
+                "data": {
+                    "id": "customer_created_date",
+                    "type": "dataset"
+                }
+            },
+            "labels": {
+                "data": [
+                    {
+                        "id": "customer_created_date.month",
+                        "type": "label"
+                    }
+                ]
+            }
+        },
+        "links": {
+            "self": "https://ach.internal.cloud.gooddata.com/api/v1/entities/workspaces/gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1/attributes/customer_created_date.month"
+        },
+        "meta": {
+            "origin": {
+                "originType": "NATIVE",
+                "originId": "gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1"
+            }
+        }
+    },
+    {
+        "id": "customer_created_date.monthOfYear",
+        "type": "attribute",
+        "attributes": {
+            "title": "Customer created date - Month of Year",
+            "description": "Generic Month (M1-M12)",
+            "tags": [
+                "Customer created date"
+            ],
+            "granularity": "MONTH_OF_YEAR"
+        },
+        "relationships": {
+            "dataset": {
+                "data": {
+                    "id": "customer_created_date",
+                    "type": "dataset"
+                }
+            },
+            "labels": {
+                "data": [
+                    {
+                        "id": "customer_created_date.monthOfYear",
+                        "type": "label"
+                    }
+                ]
+            }
+        },
+        "links": {
+            "self": "https://ach.internal.cloud.gooddata.com/api/v1/entities/workspaces/gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1/attributes/customer_created_date.monthOfYear"
+        },
+        "meta": {
+            "origin": {
+                "originType": "NATIVE",
+                "originId": "gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1"
+            }
+        }
+    },
+    {
+        "id": "customer_created_date.quarter",
+        "type": "attribute",
+        "attributes": {
+            "title": "Customer created date - Quarter/Year",
+            "description": "Quarter and Year (Q1/2020)",
+            "tags": [
+                "Customer created date"
+            ],
+            "granularity": "QUARTER"
+        },
+        "relationships": {
+            "dataset": {
+                "data": {
+                    "id": "customer_created_date",
+                    "type": "dataset"
+                }
+            },
+            "labels": {
+                "data": [
+                    {
+                        "id": "customer_created_date.quarter",
+                        "type": "label"
+                    }
+                ]
+            }
+        },
+        "links": {
+            "self": "https://ach.internal.cloud.gooddata.com/api/v1/entities/workspaces/gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1/attributes/customer_created_date.quarter"
+        },
+        "meta": {
+            "origin": {
+                "originType": "NATIVE",
+                "originId": "gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1"
+            }
+        }
+    },
+    {
+        "id": "customer_created_date.quarterOfYear",
+        "type": "attribute",
+        "attributes": {
+            "title": "Customer created date - Quarter of Year",
+            "description": "Generic Quarter (Q1-Q4)",
+            "tags": [
+                "Customer created date"
+            ],
+            "granularity": "QUARTER_OF_YEAR"
+        },
+        "relationships": {
+            "dataset": {
+                "data": {
+                    "id": "customer_created_date",
+                    "type": "dataset"
+                }
+            },
+            "labels": {
+                "data": [
+                    {
+                        "id": "customer_created_date.quarterOfYear",
+                        "type": "label"
+                    }
+                ]
+            }
+        },
+        "links": {
+            "self": "https://ach.internal.cloud.gooddata.com/api/v1/entities/workspaces/gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1/attributes/customer_created_date.quarterOfYear"
+        },
+        "meta": {
+            "origin": {
+                "originType": "NATIVE",
+                "originId": "gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1"
+            }
+        }
+    },
+    {
+        "id": "customer_created_date.week",
+        "type": "attribute",
+        "attributes": {
+            "title": "Customer created date - Week/Year",
+            "description": "Week and Year (W52/2020)",
+            "tags": [
+                "Customer created date"
+            ],
+            "granularity": "WEEK"
+        },
+        "relationships": {
+            "dataset": {
+                "data": {
+                    "id": "customer_created_date",
+                    "type": "dataset"
+                }
+            },
+            "labels": {
+                "data": [
+                    {
+                        "id": "customer_created_date.week",
+                        "type": "label"
+                    }
+                ]
+            }
+        },
+        "links": {
+            "self": "https://ach.internal.cloud.gooddata.com/api/v1/entities/workspaces/gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1/attributes/customer_created_date.week"
+        },
+        "meta": {
+            "origin": {
+                "originType": "NATIVE",
+                "originId": "gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1"
+            }
+        }
+    },
+    {
+        "id": "customer_created_date.weekOfYear",
+        "type": "attribute",
+        "attributes": {
+            "title": "Customer created date - Week of Year",
+            "description": "Generic Week (W1-W53)",
+            "tags": [
+                "Customer created date"
+            ],
+            "granularity": "WEEK_OF_YEAR"
+        },
+        "relationships": {
+            "dataset": {
+                "data": {
+                    "id": "customer_created_date",
+                    "type": "dataset"
+                }
+            },
+            "labels": {
+                "data": [
+                    {
+                        "id": "customer_created_date.weekOfYear",
+                        "type": "label"
+                    }
+                ]
+            }
+        },
+        "links": {
+            "self": "https://ach.internal.cloud.gooddata.com/api/v1/entities/workspaces/gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1/attributes/customer_created_date.weekOfYear"
+        },
+        "meta": {
+            "origin": {
+                "originType": "NATIVE",
+                "originId": "gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1"
+            }
+        }
+    },
+    {
+        "id": "customer_created_date.year",
+        "type": "attribute",
+        "attributes": {
+            "title": "Customer created date - Year",
+            "description": "Year",
+            "tags": [
+                "Customer created date"
+            ],
+            "granularity": "YEAR"
+        },
+        "relationships": {
+            "dataset": {
+                "data": {
+                    "id": "customer_created_date",
+                    "type": "dataset"
+                }
+            },
+            "labels": {
+                "data": [
+                    {
+                        "id": "customer_created_date.year",
+                        "type": "label"
+                    }
+                ]
+            }
+        },
+        "links": {
+            "self": "https://ach.internal.cloud.gooddata.com/api/v1/entities/workspaces/gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1/attributes/customer_created_date.year"
+        },
+        "meta": {
+            "origin": {
+                "originType": "NATIVE",
+                "originId": "gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1"
+            }
+        }
+    },
+    {
+        "id": "customer_email",
+        "type": "attribute",
+        "attributes": {
+            "title": "Customer email",
+            "description": "Customer email",
+            "tags": [
+                "Customer"
+            ],
+            "sourceColumn": "customer_email",
+            "sourceColumnDataType": "STRING"
+        },
+        "relationships": {
+            "dataset": {
+                "data": {
+                    "id": "customer",
+                    "type": "dataset"
+                }
+            },
+            "labels": {
+                "data": [
+                    {
+                        "id": "customer_email",
+                        "type": "label"
+                    }
+                ]
+            }
+        },
+        "links": {
+            "self": "https://ach.internal.cloud.gooddata.com/api/v1/entities/workspaces/gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1/attributes/customer_email"
+        },
+        "meta": {
+            "origin": {
+                "originType": "NATIVE",
+                "originId": "gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1"
+            }
+        }
+    },
+    {
+        "id": "customer_id",
+        "type": "attribute",
+        "attributes": {
+            "title": "Customer id",
+            "description": "Customer id",
+            "tags": [
+                "Customer"
+            ],
+            "sourceColumn": "customer_id",
+            "sourceColumnDataType": "STRING"
+        },
+        "relationships": {
+            "defaultView": {
+                "data": {
+                    "id": "customer_id",
+                    "type": "label"
+                }
+            },
+            "dataset": {
+                "data": {
+                    "id": "customer",
+                    "type": "dataset"
+                }
+            },
+            "labels": {
+                "data": [
+                    {
+                        "id": "customer_id",
+                        "type": "label"
+                    },
+                    {
+                        "id": "customer_name",
+                        "type": "label"
+                    }
+                ]
+            }
+        },
+        "links": {
+            "self": "https://ach.internal.cloud.gooddata.com/api/v1/entities/workspaces/gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1/attributes/customer_id"
+        },
+        "meta": {
+            "origin": {
+                "originType": "NATIVE",
+                "originId": "gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1"
+            }
+        }
+    },
+    {
+        "id": "customer_state",
+        "type": "attribute",
+        "attributes": {
+            "title": "Customer state",
+            "description": "Customer state",
+            "tags": [
+                "Customer"
+            ],
+            "sourceColumn": "customer_state",
+            "sourceColumnDataType": "STRING"
+        },
+        "relationships": {
+            "dataset": {
+                "data": {
+                    "id": "customer",
+                    "type": "dataset"
+                }
+            },
+            "labels": {
+                "data": [
+                    {
+                        "id": "customer_state",
+                        "type": "label"
+                    }
+                ]
+            }
+        },
+        "links": {
+            "self": "https://ach.internal.cloud.gooddata.com/api/v1/entities/workspaces/gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1/attributes/customer_state"
+        },
+        "meta": {
+            "origin": {
+                "originType": "NATIVE",
+                "originId": "gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1"
+            }
+        }
+    },
+    {
+        "id": "date.day",
+        "type": "attribute",
+        "attributes": {
+            "title": "Date - Date",
+            "description": "Date",
+            "tags": [
+                "Date"
+            ],
+            "granularity": "DAY"
+        },
+        "relationships": {
+            "dataset": {
+                "data": {
+                    "id": "date",
+                    "type": "dataset"
+                }
+            },
+            "labels": {
+                "data": [
+                    {
+                        "id": "date.day",
+                        "type": "label"
+                    }
+                ]
+            }
+        },
+        "links": {
+            "self": "https://ach.internal.cloud.gooddata.com/api/v1/entities/workspaces/gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1/attributes/date.day"
+        },
+        "meta": {
+            "origin": {
+                "originType": "NATIVE",
+                "originId": "gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1"
+            }
+        }
+    },
+    {
+        "id": "date.dayOfMonth",
+        "type": "attribute",
+        "attributes": {
+            "title": "Date - Day of Month",
+            "description": "Generic Day of the Month (D1-D31)",
+            "tags": [
+                "Date"
+            ],
+            "granularity": "DAY_OF_MONTH"
+        },
+        "relationships": {
+            "dataset": {
+                "data": {
+                    "id": "date",
+                    "type": "dataset"
+                }
+            },
+            "labels": {
+                "data": [
+                    {
+                        "id": "date.dayOfMonth",
+                        "type": "label"
+                    }
+                ]
+            }
+        },
+        "links": {
+            "self": "https://ach.internal.cloud.gooddata.com/api/v1/entities/workspaces/gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1/attributes/date.dayOfMonth"
+        },
+        "meta": {
+            "origin": {
+                "originType": "NATIVE",
+                "originId": "gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1"
+            }
+        }
+    },
+    {
+        "id": "date.dayOfWeek",
+        "type": "attribute",
+        "attributes": {
+            "title": "Date - Day of Week",
+            "description": "Generic Day of the Week (D1-D7)",
+            "tags": [
+                "Date"
+            ],
+            "granularity": "DAY_OF_WEEK"
+        },
+        "relationships": {
+            "dataset": {
+                "data": {
+                    "id": "date",
+                    "type": "dataset"
+                }
+            },
+            "labels": {
+                "data": [
+                    {
+                        "id": "date.dayOfWeek",
+                        "type": "label"
+                    }
+                ]
+            }
+        },
+        "links": {
+            "self": "https://ach.internal.cloud.gooddata.com/api/v1/entities/workspaces/gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1/attributes/date.dayOfWeek"
+        },
+        "meta": {
+            "origin": {
+                "originType": "NATIVE",
+                "originId": "gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1"
+            }
+        }
+    },
+    {
+        "id": "date.dayOfYear",
+        "type": "attribute",
+        "attributes": {
+            "title": "Date - Day of Year",
+            "description": "Generic Day of the Year (D1-D366)",
+            "tags": [
+                "Date"
+            ],
+            "granularity": "DAY_OF_YEAR"
+        },
+        "relationships": {
+            "dataset": {
+                "data": {
+                    "id": "date",
+                    "type": "dataset"
+                }
+            },
+            "labels": {
+                "data": [
+                    {
+                        "id": "date.dayOfYear",
+                        "type": "label"
+                    }
+                ]
+            }
+        },
+        "links": {
+            "self": "https://ach.internal.cloud.gooddata.com/api/v1/entities/workspaces/gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1/attributes/date.dayOfYear"
+        },
+        "meta": {
+            "origin": {
+                "originType": "NATIVE",
+                "originId": "gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1"
+            }
+        }
+    },
+    {
+        "id": "date.hour",
+        "type": "attribute",
+        "attributes": {
+            "title": "Date - Hour",
+            "description": "Hour",
+            "tags": [
+                "Date"
+            ],
+            "granularity": "HOUR"
+        },
+        "relationships": {
+            "dataset": {
+                "data": {
+                    "id": "date",
+                    "type": "dataset"
+                }
+            },
+            "labels": {
+                "data": [
+                    {
+                        "id": "date.hour",
+                        "type": "label"
+                    }
+                ]
+            }
+        },
+        "links": {
+            "self": "https://ach.internal.cloud.gooddata.com/api/v1/entities/workspaces/gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1/attributes/date.hour"
+        },
+        "meta": {
+            "origin": {
+                "originType": "NATIVE",
+                "originId": "gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1"
+            }
+        }
+    },
+    {
+        "id": "date.hourOfDay",
+        "type": "attribute",
+        "attributes": {
+            "title": "Date - Hour of Day",
+            "description": "Generic Hour of the Day(H1-H24)",
+            "tags": [
+                "Date"
+            ],
+            "granularity": "HOUR_OF_DAY"
+        },
+        "relationships": {
+            "dataset": {
+                "data": {
+                    "id": "date",
+                    "type": "dataset"
+                }
+            },
+            "labels": {
+                "data": [
+                    {
+                        "id": "date.hourOfDay",
+                        "type": "label"
+                    }
+                ]
+            }
+        },
+        "links": {
+            "self": "https://ach.internal.cloud.gooddata.com/api/v1/entities/workspaces/gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1/attributes/date.hourOfDay"
+        },
+        "meta": {
+            "origin": {
+                "originType": "NATIVE",
+                "originId": "gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1"
+            }
+        }
+    },
+    {
+        "id": "date.minute",
+        "type": "attribute",
+        "attributes": {
+            "title": "Date - Minute",
+            "description": "Minute",
+            "tags": [
+                "Date"
+            ],
+            "granularity": "MINUTE"
+        },
+        "relationships": {
+            "dataset": {
+                "data": {
+                    "id": "date",
+                    "type": "dataset"
+                }
+            },
+            "labels": {
+                "data": [
+                    {
+                        "id": "date.minute",
+                        "type": "label"
+                    }
+                ]
+            }
+        },
+        "links": {
+            "self": "https://ach.internal.cloud.gooddata.com/api/v1/entities/workspaces/gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1/attributes/date.minute"
+        },
+        "meta": {
+            "origin": {
+                "originType": "NATIVE",
+                "originId": "gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1"
+            }
+        }
+    },
+    {
+        "id": "date.minuteOfHour",
+        "type": "attribute",
+        "attributes": {
+            "title": "Date - Minute of Hour",
+            "description": "Generic Minute of the Hour(MI1-MI60)",
+            "tags": [
+                "Date"
+            ],
+            "granularity": "MINUTE_OF_HOUR"
+        },
+        "relationships": {
+            "dataset": {
+                "data": {
+                    "id": "date",
+                    "type": "dataset"
+                }
+            },
+            "labels": {
+                "data": [
+                    {
+                        "id": "date.minuteOfHour",
+                        "type": "label"
+                    }
+                ]
+            }
+        },
+        "links": {
+            "self": "https://ach.internal.cloud.gooddata.com/api/v1/entities/workspaces/gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1/attributes/date.minuteOfHour"
+        },
+        "meta": {
+            "origin": {
+                "originType": "NATIVE",
+                "originId": "gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1"
+            }
+        }
+    },
+    {
+        "id": "date.month",
+        "type": "attribute",
+        "attributes": {
+            "title": "Date - Month/Year",
+            "description": "Month and Year (12/2020)",
+            "tags": [
+                "Date"
+            ],
+            "granularity": "MONTH"
+        },
+        "relationships": {
+            "dataset": {
+                "data": {
+                    "id": "date",
+                    "type": "dataset"
+                }
+            },
+            "labels": {
+                "data": [
+                    {
+                        "id": "date.month",
+                        "type": "label"
+                    }
+                ]
+            }
+        },
+        "links": {
+            "self": "https://ach.internal.cloud.gooddata.com/api/v1/entities/workspaces/gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1/attributes/date.month"
+        },
+        "meta": {
+            "origin": {
+                "originType": "NATIVE",
+                "originId": "gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1"
+            }
+        }
+    },
+    {
+        "id": "date.monthOfYear",
+        "type": "attribute",
+        "attributes": {
+            "title": "Date - Month of Year",
+            "description": "Generic Month (M1-M12)",
+            "tags": [
+                "Date"
+            ],
+            "granularity": "MONTH_OF_YEAR"
+        },
+        "relationships": {
+            "dataset": {
+                "data": {
+                    "id": "date",
+                    "type": "dataset"
+                }
+            },
+            "labels": {
+                "data": [
+                    {
+                        "id": "date.monthOfYear",
+                        "type": "label"
+                    }
+                ]
+            }
+        },
+        "links": {
+            "self": "https://ach.internal.cloud.gooddata.com/api/v1/entities/workspaces/gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1/attributes/date.monthOfYear"
+        },
+        "meta": {
+            "origin": {
+                "originType": "NATIVE",
+                "originId": "gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1"
+            }
+        }
+    },
+    {
+        "id": "date.quarter",
+        "type": "attribute",
+        "attributes": {
+            "title": "Date - Quarter/Year",
+            "description": "Quarter and Year (Q1/2020)",
+            "tags": [
+                "Date"
+            ],
+            "granularity": "QUARTER"
+        },
+        "relationships": {
+            "dataset": {
+                "data": {
+                    "id": "date",
+                    "type": "dataset"
+                }
+            },
+            "labels": {
+                "data": [
+                    {
+                        "id": "date.quarter",
+                        "type": "label"
+                    }
+                ]
+            }
+        },
+        "links": {
+            "self": "https://ach.internal.cloud.gooddata.com/api/v1/entities/workspaces/gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1/attributes/date.quarter"
+        },
+        "meta": {
+            "origin": {
+                "originType": "NATIVE",
+                "originId": "gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1"
+            }
+        }
+    },
+    {
+        "id": "date.quarterOfYear",
+        "type": "attribute",
+        "attributes": {
+            "title": "Date - Quarter of Year",
+            "description": "Generic Quarter (Q1-Q4)",
+            "tags": [
+                "Date"
+            ],
+            "granularity": "QUARTER_OF_YEAR"
+        },
+        "relationships": {
+            "dataset": {
+                "data": {
+                    "id": "date",
+                    "type": "dataset"
+                }
+            },
+            "labels": {
+                "data": [
+                    {
+                        "id": "date.quarterOfYear",
+                        "type": "label"
+                    }
+                ]
+            }
+        },
+        "links": {
+            "self": "https://ach.internal.cloud.gooddata.com/api/v1/entities/workspaces/gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1/attributes/date.quarterOfYear"
+        },
+        "meta": {
+            "origin": {
+                "originType": "NATIVE",
+                "originId": "gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1"
+            }
+        }
+    },
+    {
+        "id": "date.week",
+        "type": "attribute",
+        "attributes": {
+            "title": "Date - Week/Year",
+            "description": "Week and Year (W52/2020)",
+            "tags": [
+                "Date"
+            ],
+            "granularity": "WEEK"
+        },
+        "relationships": {
+            "dataset": {
+                "data": {
+                    "id": "date",
+                    "type": "dataset"
+                }
+            },
+            "labels": {
+                "data": [
+                    {
+                        "id": "date.week",
+                        "type": "label"
+                    }
+                ]
+            }
+        },
+        "links": {
+            "self": "https://ach.internal.cloud.gooddata.com/api/v1/entities/workspaces/gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1/attributes/date.week"
+        },
+        "meta": {
+            "origin": {
+                "originType": "NATIVE",
+                "originId": "gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1"
+            }
+        }
+    },
+    {
+        "id": "date.weekOfYear",
+        "type": "attribute",
+        "attributes": {
+            "title": "Date - Week of Year",
+            "description": "Generic Week (W1-W53)",
+            "tags": [
+                "Date"
+            ],
+            "granularity": "WEEK_OF_YEAR"
+        },
+        "relationships": {
+            "dataset": {
+                "data": {
+                    "id": "date",
+                    "type": "dataset"
+                }
+            },
+            "labels": {
+                "data": [
+                    {
+                        "id": "date.weekOfYear",
+                        "type": "label"
+                    }
+                ]
+            }
+        },
+        "links": {
+            "self": "https://ach.internal.cloud.gooddata.com/api/v1/entities/workspaces/gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1/attributes/date.weekOfYear"
+        },
+        "meta": {
+            "origin": {
+                "originType": "NATIVE",
+                "originId": "gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1"
+            }
+        }
+    },
+    {
+        "id": "date.year",
+        "type": "attribute",
+        "attributes": {
+            "title": "Date - Year",
+            "description": "Year",
+            "tags": [
+                "Date"
+            ],
+            "granularity": "YEAR"
+        },
+        "relationships": {
+            "dataset": {
+                "data": {
+                    "id": "date",
+                    "type": "dataset"
+                }
+            },
+            "labels": {
+                "data": [
+                    {
+                        "id": "date.year",
+                        "type": "label"
+                    }
+                ]
+            }
+        },
+        "links": {
+            "self": "https://ach.internal.cloud.gooddata.com/api/v1/entities/workspaces/gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1/attributes/date.year"
+        },
+        "meta": {
+            "origin": {
+                "originType": "NATIVE",
+                "originId": "gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1"
+            }
+        }
+    },
+    {
+        "id": "inventory_month.day",
+        "type": "attribute",
+        "attributes": {
+            "title": "Inventory month - Date",
+            "description": "Date",
+            "tags": [
+                "Inventory month"
+            ],
+            "granularity": "DAY"
+        },
+        "relationships": {
+            "dataset": {
+                "data": {
+                    "id": "inventory_month",
+                    "type": "dataset"
+                }
+            },
+            "labels": {
+                "data": [
+                    {
+                        "id": "inventory_month.day",
+                        "type": "label"
+                    }
+                ]
+            }
+        },
+        "links": {
+            "self": "https://ach.internal.cloud.gooddata.com/api/v1/entities/workspaces/gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1/attributes/inventory_month.day"
+        },
+        "meta": {
+            "origin": {
+                "originType": "NATIVE",
+                "originId": "gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1"
+            }
+        }
+    },
+    {
+        "id": "inventory_month.dayOfMonth",
+        "type": "attribute",
+        "attributes": {
+            "title": "Inventory month - Day of Month",
+            "description": "Generic Day of the Month (D1-D31)",
+            "tags": [
+                "Inventory month"
+            ],
+            "granularity": "DAY_OF_MONTH"
+        },
+        "relationships": {
+            "dataset": {
+                "data": {
+                    "id": "inventory_month",
+                    "type": "dataset"
+                }
+            },
+            "labels": {
+                "data": [
+                    {
+                        "id": "inventory_month.dayOfMonth",
+                        "type": "label"
+                    }
+                ]
+            }
+        },
+        "links": {
+            "self": "https://ach.internal.cloud.gooddata.com/api/v1/entities/workspaces/gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1/attributes/inventory_month.dayOfMonth"
+        },
+        "meta": {
+            "origin": {
+                "originType": "NATIVE",
+                "originId": "gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1"
+            }
+        }
+    },
+    {
+        "id": "inventory_month.dayOfWeek",
+        "type": "attribute",
+        "attributes": {
+            "title": "Inventory month - Day of Week",
+            "description": "Generic Day of the Week (D1-D7)",
+            "tags": [
+                "Inventory month"
+            ],
+            "granularity": "DAY_OF_WEEK"
+        },
+        "relationships": {
+            "dataset": {
+                "data": {
+                    "id": "inventory_month",
+                    "type": "dataset"
+                }
+            },
+            "labels": {
+                "data": [
+                    {
+                        "id": "inventory_month.dayOfWeek",
+                        "type": "label"
+                    }
+                ]
+            }
+        },
+        "links": {
+            "self": "https://ach.internal.cloud.gooddata.com/api/v1/entities/workspaces/gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1/attributes/inventory_month.dayOfWeek"
+        },
+        "meta": {
+            "origin": {
+                "originType": "NATIVE",
+                "originId": "gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1"
+            }
+        }
+    },
+    {
+        "id": "inventory_month.dayOfYear",
+        "type": "attribute",
+        "attributes": {
+            "title": "Inventory month - Day of Year",
+            "description": "Generic Day of the Year (D1-D366)",
+            "tags": [
+                "Inventory month"
+            ],
+            "granularity": "DAY_OF_YEAR"
+        },
+        "relationships": {
+            "dataset": {
+                "data": {
+                    "id": "inventory_month",
+                    "type": "dataset"
+                }
+            },
+            "labels": {
+                "data": [
+                    {
+                        "id": "inventory_month.dayOfYear",
+                        "type": "label"
+                    }
+                ]
+            }
+        },
+        "links": {
+            "self": "https://ach.internal.cloud.gooddata.com/api/v1/entities/workspaces/gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1/attributes/inventory_month.dayOfYear"
+        },
+        "meta": {
+            "origin": {
+                "originType": "NATIVE",
+                "originId": "gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1"
+            }
+        }
+    },
+    {
+        "id": "inventory_month.hour",
+        "type": "attribute",
+        "attributes": {
+            "title": "Inventory month - Hour",
+            "description": "Hour",
+            "tags": [
+                "Inventory month"
+            ],
+            "granularity": "HOUR"
+        },
+        "relationships": {
+            "dataset": {
+                "data": {
+                    "id": "inventory_month",
+                    "type": "dataset"
+                }
+            },
+            "labels": {
+                "data": [
+                    {
+                        "id": "inventory_month.hour",
+                        "type": "label"
+                    }
+                ]
+            }
+        },
+        "links": {
+            "self": "https://ach.internal.cloud.gooddata.com/api/v1/entities/workspaces/gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1/attributes/inventory_month.hour"
+        },
+        "meta": {
+            "origin": {
+                "originType": "NATIVE",
+                "originId": "gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1"
+            }
+        }
+    },
+    {
+        "id": "inventory_month.hourOfDay",
+        "type": "attribute",
+        "attributes": {
+            "title": "Inventory month - Hour of Day",
+            "description": "Generic Hour of the Day(H1-H24)",
+            "tags": [
+                "Inventory month"
+            ],
+            "granularity": "HOUR_OF_DAY"
+        },
+        "relationships": {
+            "dataset": {
+                "data": {
+                    "id": "inventory_month",
+                    "type": "dataset"
+                }
+            },
+            "labels": {
+                "data": [
+                    {
+                        "id": "inventory_month.hourOfDay",
+                        "type": "label"
+                    }
+                ]
+            }
+        },
+        "links": {
+            "self": "https://ach.internal.cloud.gooddata.com/api/v1/entities/workspaces/gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1/attributes/inventory_month.hourOfDay"
+        },
+        "meta": {
+            "origin": {
+                "originType": "NATIVE",
+                "originId": "gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1"
+            }
+        }
+    },
+    {
+        "id": "inventory_month.minute",
+        "type": "attribute",
+        "attributes": {
+            "title": "Inventory month - Minute",
+            "description": "Minute",
+            "tags": [
+                "Inventory month"
+            ],
+            "granularity": "MINUTE"
+        },
+        "relationships": {
+            "dataset": {
+                "data": {
+                    "id": "inventory_month",
+                    "type": "dataset"
+                }
+            },
+            "labels": {
+                "data": [
+                    {
+                        "id": "inventory_month.minute",
+                        "type": "label"
+                    }
+                ]
+            }
+        },
+        "links": {
+            "self": "https://ach.internal.cloud.gooddata.com/api/v1/entities/workspaces/gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1/attributes/inventory_month.minute"
+        },
+        "meta": {
+            "origin": {
+                "originType": "NATIVE",
+                "originId": "gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1"
+            }
+        }
+    },
+    {
+        "id": "inventory_month.minuteOfHour",
+        "type": "attribute",
+        "attributes": {
+            "title": "Inventory month - Minute of Hour",
+            "description": "Generic Minute of the Hour(MI1-MI60)",
+            "tags": [
+                "Inventory month"
+            ],
+            "granularity": "MINUTE_OF_HOUR"
+        },
+        "relationships": {
+            "dataset": {
+                "data": {
+                    "id": "inventory_month",
+                    "type": "dataset"
+                }
+            },
+            "labels": {
+                "data": [
+                    {
+                        "id": "inventory_month.minuteOfHour",
+                        "type": "label"
+                    }
+                ]
+            }
+        },
+        "links": {
+            "self": "https://ach.internal.cloud.gooddata.com/api/v1/entities/workspaces/gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1/attributes/inventory_month.minuteOfHour"
+        },
+        "meta": {
+            "origin": {
+                "originType": "NATIVE",
+                "originId": "gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1"
+            }
+        }
+    },
+    {
+        "id": "inventory_month.month",
+        "type": "attribute",
+        "attributes": {
+            "title": "Inventory month - Month/Year",
+            "description": "Month and Year (12/2020)",
+            "tags": [
+                "Inventory month"
+            ],
+            "granularity": "MONTH"
+        },
+        "relationships": {
+            "dataset": {
+                "data": {
+                    "id": "inventory_month",
+                    "type": "dataset"
+                }
+            },
+            "labels": {
+                "data": [
+                    {
+                        "id": "inventory_month.month",
+                        "type": "label"
+                    }
+                ]
+            }
+        },
+        "links": {
+            "self": "https://ach.internal.cloud.gooddata.com/api/v1/entities/workspaces/gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1/attributes/inventory_month.month"
+        },
+        "meta": {
+            "origin": {
+                "originType": "NATIVE",
+                "originId": "gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1"
+            }
+        }
+    },
+    {
+        "id": "inventory_month.monthOfYear",
+        "type": "attribute",
+        "attributes": {
+            "title": "Inventory month - Month of Year",
+            "description": "Generic Month (M1-M12)",
+            "tags": [
+                "Inventory month"
+            ],
+            "granularity": "MONTH_OF_YEAR"
+        },
+        "relationships": {
+            "dataset": {
+                "data": {
+                    "id": "inventory_month",
+                    "type": "dataset"
+                }
+            },
+            "labels": {
+                "data": [
+                    {
+                        "id": "inventory_month.monthOfYear",
+                        "type": "label"
+                    }
+                ]
+            }
+        },
+        "links": {
+            "self": "https://ach.internal.cloud.gooddata.com/api/v1/entities/workspaces/gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1/attributes/inventory_month.monthOfYear"
+        },
+        "meta": {
+            "origin": {
+                "originType": "NATIVE",
+                "originId": "gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1"
+            }
+        }
+    },
+    {
+        "id": "inventory_month.quarter",
+        "type": "attribute",
+        "attributes": {
+            "title": "Inventory month - Quarter/Year",
+            "description": "Quarter and Year (Q1/2020)",
+            "tags": [
+                "Inventory month"
+            ],
+            "granularity": "QUARTER"
+        },
+        "relationships": {
+            "dataset": {
+                "data": {
+                    "id": "inventory_month",
+                    "type": "dataset"
+                }
+            },
+            "labels": {
+                "data": [
+                    {
+                        "id": "inventory_month.quarter",
+                        "type": "label"
+                    }
+                ]
+            }
+        },
+        "links": {
+            "self": "https://ach.internal.cloud.gooddata.com/api/v1/entities/workspaces/gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1/attributes/inventory_month.quarter"
+        },
+        "meta": {
+            "origin": {
+                "originType": "NATIVE",
+                "originId": "gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1"
+            }
+        }
+    },
+    {
+        "id": "inventory_month.quarterOfYear",
+        "type": "attribute",
+        "attributes": {
+            "title": "Inventory month - Quarter of Year",
+            "description": "Generic Quarter (Q1-Q4)",
+            "tags": [
+                "Inventory month"
+            ],
+            "granularity": "QUARTER_OF_YEAR"
+        },
+        "relationships": {
+            "dataset": {
+                "data": {
+                    "id": "inventory_month",
+                    "type": "dataset"
+                }
+            },
+            "labels": {
+                "data": [
+                    {
+                        "id": "inventory_month.quarterOfYear",
+                        "type": "label"
+                    }
+                ]
+            }
+        },
+        "links": {
+            "self": "https://ach.internal.cloud.gooddata.com/api/v1/entities/workspaces/gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1/attributes/inventory_month.quarterOfYear"
+        },
+        "meta": {
+            "origin": {
+                "originType": "NATIVE",
+                "originId": "gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1"
+            }
+        }
+    },
+    {
+        "id": "inventory_month.week",
+        "type": "attribute",
+        "attributes": {
+            "title": "Inventory month - Week/Year",
+            "description": "Week and Year (W52/2020)",
+            "tags": [
+                "Inventory month"
+            ],
+            "granularity": "WEEK"
+        },
+        "relationships": {
+            "dataset": {
+                "data": {
+                    "id": "inventory_month",
+                    "type": "dataset"
+                }
+            },
+            "labels": {
+                "data": [
+                    {
+                        "id": "inventory_month.week",
+                        "type": "label"
+                    }
+                ]
+            }
+        },
+        "links": {
+            "self": "https://ach.internal.cloud.gooddata.com/api/v1/entities/workspaces/gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1/attributes/inventory_month.week"
+        },
+        "meta": {
+            "origin": {
+                "originType": "NATIVE",
+                "originId": "gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1"
+            }
+        }
+    },
+    {
+        "id": "inventory_month.weekOfYear",
+        "type": "attribute",
+        "attributes": {
+            "title": "Inventory month - Week of Year",
+            "description": "Generic Week (W1-W53)",
+            "tags": [
+                "Inventory month"
+            ],
+            "granularity": "WEEK_OF_YEAR"
+        },
+        "relationships": {
+            "dataset": {
+                "data": {
+                    "id": "inventory_month",
+                    "type": "dataset"
+                }
+            },
+            "labels": {
+                "data": [
+                    {
+                        "id": "inventory_month.weekOfYear",
+                        "type": "label"
+                    }
+                ]
+            }
+        },
+        "links": {
+            "self": "https://ach.internal.cloud.gooddata.com/api/v1/entities/workspaces/gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1/attributes/inventory_month.weekOfYear"
+        },
+        "meta": {
+            "origin": {
+                "originType": "NATIVE",
+                "originId": "gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1"
+            }
+        }
+    },
+    {
+        "id": "inventory_month.year",
+        "type": "attribute",
+        "attributes": {
+            "title": "Inventory month - Year",
+            "description": "Year",
+            "tags": [
+                "Inventory month"
+            ],
+            "granularity": "YEAR"
+        },
+        "relationships": {
+            "dataset": {
+                "data": {
+                    "id": "inventory_month",
+                    "type": "dataset"
+                }
+            },
+            "labels": {
+                "data": [
+                    {
+                        "id": "inventory_month.year",
+                        "type": "label"
+                    }
+                ]
+            }
+        },
+        "links": {
+            "self": "https://ach.internal.cloud.gooddata.com/api/v1/entities/workspaces/gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1/attributes/inventory_month.year"
+        },
+        "meta": {
+            "origin": {
+                "originType": "NATIVE",
+                "originId": "gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1"
+            }
+        }
+    },
+    {
+        "id": "monthly_inventory_id",
+        "type": "attribute",
+        "attributes": {
+            "title": "Monthly inventory id",
+            "description": "Monthly inventory id",
+            "tags": [
+                "Monthly inventory"
+            ],
+            "sourceColumn": "monthly_inventory_id",
+            "sourceColumnDataType": "STRING"
+        },
+        "relationships": {
+            "dataset": {
+                "data": {
+                    "id": "monthlyinventory",
+                    "type": "dataset"
+                }
+            },
+            "labels": {
+                "data": [
+                    {
+                        "id": "monthly_inventory_id",
+                        "type": "label"
+                    }
+                ]
+            }
+        },
+        "links": {
+            "self": "https://ach.internal.cloud.gooddata.com/api/v1/entities/workspaces/gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1/attributes/monthly_inventory_id"
+        },
+        "meta": {
+            "origin": {
+                "originType": "NATIVE",
+                "originId": "gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1"
+            }
+        }
+    },
+    {
+        "id": "order_date.day",
+        "type": "attribute",
+        "attributes": {
+            "title": "Order date - Date",
+            "description": "Date",
+            "tags": [
+                "Order date"
+            ],
+            "granularity": "DAY"
+        },
+        "relationships": {
+            "dataset": {
+                "data": {
+                    "id": "order_date",
+                    "type": "dataset"
+                }
+            },
+            "labels": {
+                "data": [
+                    {
+                        "id": "order_date.day",
+                        "type": "label"
+                    }
+                ]
+            }
+        },
+        "links": {
+            "self": "https://ach.internal.cloud.gooddata.com/api/v1/entities/workspaces/gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1/attributes/order_date.day"
+        },
+        "meta": {
+            "origin": {
+                "originType": "NATIVE",
+                "originId": "gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1"
+            }
+        }
+    },
+    {
+        "id": "order_date.dayOfMonth",
+        "type": "attribute",
+        "attributes": {
+            "title": "Order date - Day of Month",
+            "description": "Generic Day of the Month (D1-D31)",
+            "tags": [
+                "Order date"
+            ],
+            "granularity": "DAY_OF_MONTH"
+        },
+        "relationships": {
+            "dataset": {
+                "data": {
+                    "id": "order_date",
+                    "type": "dataset"
+                }
+            },
+            "labels": {
+                "data": [
+                    {
+                        "id": "order_date.dayOfMonth",
+                        "type": "label"
+                    }
+                ]
+            }
+        },
+        "links": {
+            "self": "https://ach.internal.cloud.gooddata.com/api/v1/entities/workspaces/gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1/attributes/order_date.dayOfMonth"
+        },
+        "meta": {
+            "origin": {
+                "originType": "NATIVE",
+                "originId": "gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1"
+            }
+        }
+    },
+    {
+        "id": "order_date.dayOfWeek",
+        "type": "attribute",
+        "attributes": {
+            "title": "Order date - Day of Week",
+            "description": "Generic Day of the Week (D1-D7)",
+            "tags": [
+                "Order date"
+            ],
+            "granularity": "DAY_OF_WEEK"
+        },
+        "relationships": {
+            "dataset": {
+                "data": {
+                    "id": "order_date",
+                    "type": "dataset"
+                }
+            },
+            "labels": {
+                "data": [
+                    {
+                        "id": "order_date.dayOfWeek",
+                        "type": "label"
+                    }
+                ]
+            }
+        },
+        "links": {
+            "self": "https://ach.internal.cloud.gooddata.com/api/v1/entities/workspaces/gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1/attributes/order_date.dayOfWeek"
+        },
+        "meta": {
+            "origin": {
+                "originType": "NATIVE",
+                "originId": "gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1"
+            }
+        }
+    },
+    {
+        "id": "order_date.dayOfYear",
+        "type": "attribute",
+        "attributes": {
+            "title": "Order date - Day of Year",
+            "description": "Generic Day of the Year (D1-D366)",
+            "tags": [
+                "Order date"
+            ],
+            "granularity": "DAY_OF_YEAR"
+        },
+        "relationships": {
+            "dataset": {
+                "data": {
+                    "id": "order_date",
+                    "type": "dataset"
+                }
+            },
+            "labels": {
+                "data": [
+                    {
+                        "id": "order_date.dayOfYear",
+                        "type": "label"
+                    }
+                ]
+            }
+        },
+        "links": {
+            "self": "https://ach.internal.cloud.gooddata.com/api/v1/entities/workspaces/gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1/attributes/order_date.dayOfYear"
+        },
+        "meta": {
+            "origin": {
+                "originType": "NATIVE",
+                "originId": "gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1"
+            }
+        }
+    },
+    {
+        "id": "order_date.hour",
+        "type": "attribute",
+        "attributes": {
+            "title": "Order date - Hour",
+            "description": "Hour",
+            "tags": [
+                "Order date"
+            ],
+            "granularity": "HOUR"
+        },
+        "relationships": {
+            "dataset": {
+                "data": {
+                    "id": "order_date",
+                    "type": "dataset"
+                }
+            },
+            "labels": {
+                "data": [
+                    {
+                        "id": "order_date.hour",
+                        "type": "label"
+                    }
+                ]
+            }
+        },
+        "links": {
+            "self": "https://ach.internal.cloud.gooddata.com/api/v1/entities/workspaces/gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1/attributes/order_date.hour"
+        },
+        "meta": {
+            "origin": {
+                "originType": "NATIVE",
+                "originId": "gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1"
+            }
+        }
+    },
+    {
+        "id": "order_date.hourOfDay",
+        "type": "attribute",
+        "attributes": {
+            "title": "Order date - Hour of Day",
+            "description": "Generic Hour of the Day(H1-H24)",
+            "tags": [
+                "Order date"
+            ],
+            "granularity": "HOUR_OF_DAY"
+        },
+        "relationships": {
+            "dataset": {
+                "data": {
+                    "id": "order_date",
+                    "type": "dataset"
+                }
+            },
+            "labels": {
+                "data": [
+                    {
+                        "id": "order_date.hourOfDay",
+                        "type": "label"
+                    }
+                ]
+            }
+        },
+        "links": {
+            "self": "https://ach.internal.cloud.gooddata.com/api/v1/entities/workspaces/gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1/attributes/order_date.hourOfDay"
+        },
+        "meta": {
+            "origin": {
+                "originType": "NATIVE",
+                "originId": "gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1"
+            }
+        }
+    },
+    {
+        "id": "order_date.minute",
+        "type": "attribute",
+        "attributes": {
+            "title": "Order date - Minute",
+            "description": "Minute",
+            "tags": [
+                "Order date"
+            ],
+            "granularity": "MINUTE"
+        },
+        "relationships": {
+            "dataset": {
+                "data": {
+                    "id": "order_date",
+                    "type": "dataset"
+                }
+            },
+            "labels": {
+                "data": [
+                    {
+                        "id": "order_date.minute",
+                        "type": "label"
+                    }
+                ]
+            }
+        },
+        "links": {
+            "self": "https://ach.internal.cloud.gooddata.com/api/v1/entities/workspaces/gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1/attributes/order_date.minute"
+        },
+        "meta": {
+            "origin": {
+                "originType": "NATIVE",
+                "originId": "gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1"
+            }
+        }
+    },
+    {
+        "id": "order_date.minuteOfHour",
+        "type": "attribute",
+        "attributes": {
+            "title": "Order date - Minute of Hour",
+            "description": "Generic Minute of the Hour(MI1-MI60)",
+            "tags": [
+                "Order date"
+            ],
+            "granularity": "MINUTE_OF_HOUR"
+        },
+        "relationships": {
+            "dataset": {
+                "data": {
+                    "id": "order_date",
+                    "type": "dataset"
+                }
+            },
+            "labels": {
+                "data": [
+                    {
+                        "id": "order_date.minuteOfHour",
+                        "type": "label"
+                    }
+                ]
+            }
+        },
+        "links": {
+            "self": "https://ach.internal.cloud.gooddata.com/api/v1/entities/workspaces/gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1/attributes/order_date.minuteOfHour"
+        },
+        "meta": {
+            "origin": {
+                "originType": "NATIVE",
+                "originId": "gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1"
+            }
+        }
+    },
+    {
+        "id": "order_date.month",
+        "type": "attribute",
+        "attributes": {
+            "title": "Order date - Month/Year",
+            "description": "Month and Year (12/2020)",
+            "tags": [
+                "Order date"
+            ],
+            "granularity": "MONTH"
+        },
+        "relationships": {
+            "dataset": {
+                "data": {
+                    "id": "order_date",
+                    "type": "dataset"
+                }
+            },
+            "labels": {
+                "data": [
+                    {
+                        "id": "order_date.month",
+                        "type": "label"
+                    }
+                ]
+            }
+        },
+        "links": {
+            "self": "https://ach.internal.cloud.gooddata.com/api/v1/entities/workspaces/gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1/attributes/order_date.month"
+        },
+        "meta": {
+            "origin": {
+                "originType": "NATIVE",
+                "originId": "gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1"
+            }
+        }
+    },
+    {
+        "id": "order_date.monthOfYear",
+        "type": "attribute",
+        "attributes": {
+            "title": "Order date - Month of Year",
+            "description": "Generic Month (M1-M12)",
+            "tags": [
+                "Order date"
+            ],
+            "granularity": "MONTH_OF_YEAR"
+        },
+        "relationships": {
+            "dataset": {
+                "data": {
+                    "id": "order_date",
+                    "type": "dataset"
+                }
+            },
+            "labels": {
+                "data": [
+                    {
+                        "id": "order_date.monthOfYear",
+                        "type": "label"
+                    }
+                ]
+            }
+        },
+        "links": {
+            "self": "https://ach.internal.cloud.gooddata.com/api/v1/entities/workspaces/gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1/attributes/order_date.monthOfYear"
+        },
+        "meta": {
+            "origin": {
+                "originType": "NATIVE",
+                "originId": "gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1"
+            }
+        }
+    },
+    {
+        "id": "order_date.quarter",
+        "type": "attribute",
+        "attributes": {
+            "title": "Order date - Quarter/Year",
+            "description": "Quarter and Year (Q1/2020)",
+            "tags": [
+                "Order date"
+            ],
+            "granularity": "QUARTER"
+        },
+        "relationships": {
+            "dataset": {
+                "data": {
+                    "id": "order_date",
+                    "type": "dataset"
+                }
+            },
+            "labels": {
+                "data": [
+                    {
+                        "id": "order_date.quarter",
+                        "type": "label"
+                    }
+                ]
+            }
+        },
+        "links": {
+            "self": "https://ach.internal.cloud.gooddata.com/api/v1/entities/workspaces/gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1/attributes/order_date.quarter"
+        },
+        "meta": {
+            "origin": {
+                "originType": "NATIVE",
+                "originId": "gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1"
+            }
+        }
+    },
+    {
+        "id": "order_date.quarterOfYear",
+        "type": "attribute",
+        "attributes": {
+            "title": "Order date - Quarter of Year",
+            "description": "Generic Quarter (Q1-Q4)",
+            "tags": [
+                "Order date"
+            ],
+            "granularity": "QUARTER_OF_YEAR"
+        },
+        "relationships": {
+            "dataset": {
+                "data": {
+                    "id": "order_date",
+                    "type": "dataset"
+                }
+            },
+            "labels": {
+                "data": [
+                    {
+                        "id": "order_date.quarterOfYear",
+                        "type": "label"
+                    }
+                ]
+            }
+        },
+        "links": {
+            "self": "https://ach.internal.cloud.gooddata.com/api/v1/entities/workspaces/gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1/attributes/order_date.quarterOfYear"
+        },
+        "meta": {
+            "origin": {
+                "originType": "NATIVE",
+                "originId": "gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1"
+            }
+        }
+    },
+    {
+        "id": "order_date.week",
+        "type": "attribute",
+        "attributes": {
+            "title": "Order date - Week/Year",
+            "description": "Week and Year (W52/2020)",
+            "tags": [
+                "Order date"
+            ],
+            "granularity": "WEEK"
+        },
+        "relationships": {
+            "dataset": {
+                "data": {
+                    "id": "order_date",
+                    "type": "dataset"
+                }
+            },
+            "labels": {
+                "data": [
+                    {
+                        "id": "order_date.week",
+                        "type": "label"
+                    }
+                ]
+            }
+        },
+        "links": {
+            "self": "https://ach.internal.cloud.gooddata.com/api/v1/entities/workspaces/gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1/attributes/order_date.week"
+        },
+        "meta": {
+            "origin": {
+                "originType": "NATIVE",
+                "originId": "gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1"
+            }
+        }
+    },
+    {
+        "id": "order_date.weekOfYear",
+        "type": "attribute",
+        "attributes": {
+            "title": "Order date - Week of Year",
+            "description": "Generic Week (W1-W53)",
+            "tags": [
+                "Order date"
+            ],
+            "granularity": "WEEK_OF_YEAR"
+        },
+        "relationships": {
+            "dataset": {
+                "data": {
+                    "id": "order_date",
+                    "type": "dataset"
+                }
+            },
+            "labels": {
+                "data": [
+                    {
+                        "id": "order_date.weekOfYear",
+                        "type": "label"
+                    }
+                ]
+            }
+        },
+        "links": {
+            "self": "https://ach.internal.cloud.gooddata.com/api/v1/entities/workspaces/gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1/attributes/order_date.weekOfYear"
+        },
+        "meta": {
+            "origin": {
+                "originType": "NATIVE",
+                "originId": "gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1"
+            }
+        }
+    },
+    {
+        "id": "order_date.year",
+        "type": "attribute",
+        "attributes": {
+            "title": "Order date - Year",
+            "description": "Year",
+            "tags": [
+                "Order date"
+            ],
+            "granularity": "YEAR"
+        },
+        "relationships": {
+            "dataset": {
+                "data": {
+                    "id": "order_date",
+                    "type": "dataset"
+                }
+            },
+            "labels": {
+                "data": [
+                    {
+                        "id": "order_date.year",
+                        "type": "label"
+                    }
+                ]
+            }
+        },
+        "links": {
+            "self": "https://ach.internal.cloud.gooddata.com/api/v1/entities/workspaces/gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1/attributes/order_date.year"
+        },
+        "meta": {
+            "origin": {
+                "originType": "NATIVE",
+                "originId": "gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1"
+            }
+        }
+    },
+    {
+        "id": "order_id",
+        "type": "attribute",
+        "attributes": {
+            "title": "Order id",
+            "description": "Order id",
+            "tags": [
+                "Orders"
+            ],
+            "sourceColumn": "order_id",
+            "sourceColumnDataType": "STRING"
+        },
+        "relationships": {
+            "dataset": {
+                "data": {
+                    "id": "orders",
+                    "type": "dataset"
+                }
+            },
+            "labels": {
+                "data": [
+                    {
+                        "id": "order_id",
+                        "type": "label"
+                    }
+                ]
+            }
+        },
+        "links": {
+            "self": "https://ach.internal.cloud.gooddata.com/api/v1/entities/workspaces/gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1/attributes/order_id"
+        },
+        "meta": {
+            "origin": {
+                "originType": "NATIVE",
+                "originId": "gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1"
+            }
+        }
+    },
+    {
+        "id": "order_line_id",
+        "type": "attribute",
+        "attributes": {
+            "title": "Order line id",
+            "description": "Order line id",
+            "tags": [
+                "Order lines"
+            ],
+            "sourceColumn": "order_line_id",
+            "sourceColumnDataType": "STRING"
+        },
+        "relationships": {
+            "dataset": {
+                "data": {
+                    "id": "order_lines",
+                    "type": "dataset"
+                }
+            },
+            "labels": {
+                "data": [
+                    {
+                        "id": "order_line_id",
+                        "type": "label"
+                    }
+                ]
+            }
+        },
+        "links": {
+            "self": "https://ach.internal.cloud.gooddata.com/api/v1/entities/workspaces/gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1/attributes/order_line_id"
+        },
+        "meta": {
+            "origin": {
+                "originType": "NATIVE",
+                "originId": "gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1"
+            }
+        }
+    },
+    {
+        "id": "order_status",
+        "type": "attribute",
+        "attributes": {
+            "title": "Order status",
+            "description": "Order status",
+            "tags": [
+                "Orders"
+            ],
+            "sourceColumn": "order_status",
+            "sourceColumnDataType": "STRING"
+        },
+        "relationships": {
+            "dataset": {
+                "data": {
+                    "id": "orders",
+                    "type": "dataset"
+                }
+            },
+            "labels": {
+                "data": [
+                    {
+                        "id": "order_status",
+                        "type": "label"
+                    }
+                ]
+            }
+        },
+        "links": {
+            "self": "https://ach.internal.cloud.gooddata.com/api/v1/entities/workspaces/gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1/attributes/order_status"
+        },
+        "meta": {
+            "origin": {
+                "originType": "NATIVE",
+                "originId": "gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1"
+            }
+        }
+    },
+    {
+        "id": "product_brand",
+        "type": "attribute",
+        "attributes": {
+            "title": "Product brand",
+            "description": "Product brand",
+            "tags": [
+                "Product"
+            ],
+            "sourceColumn": "product_brand",
+            "sourceColumnDataType": "STRING"
+        },
+        "relationships": {
+            "dataset": {
+                "data": {
+                    "id": "product",
+                    "type": "dataset"
+                }
+            },
+            "labels": {
+                "data": [
+                    {
+                        "id": "product_brand",
+                        "type": "label"
+                    }
+                ]
+            }
+        },
+        "links": {
+            "self": "https://ach.internal.cloud.gooddata.com/api/v1/entities/workspaces/gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1/attributes/product_brand"
+        },
+        "meta": {
+            "origin": {
+                "originType": "NATIVE",
+                "originId": "gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1"
+            }
+        }
+    },
+    {
+        "id": "product_category",
+        "type": "attribute",
+        "attributes": {
+            "title": "Product category",
+            "description": "Product category",
+            "tags": [
+                "Product"
+            ],
+            "sourceColumn": "product_category",
+            "sourceColumnDataType": "STRING"
+        },
+        "relationships": {
+            "dataset": {
+                "data": {
+                    "id": "product",
+                    "type": "dataset"
+                }
+            },
+            "labels": {
+                "data": [
+                    {
+                        "id": "product_category",
+                        "type": "label"
+                    }
+                ]
+            }
+        },
+        "links": {
+            "self": "https://ach.internal.cloud.gooddata.com/api/v1/entities/workspaces/gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1/attributes/product_category"
+        },
+        "meta": {
+            "origin": {
+                "originType": "NATIVE",
+                "originId": "gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1"
+            }
+        }
+    },
+    {
+        "id": "product_id",
+        "type": "attribute",
+        "attributes": {
+            "title": "Product id",
+            "description": "Product id",
+            "tags": [
+                "Product"
+            ],
+            "sourceColumn": "product_id",
+            "sourceColumnDataType": "STRING"
+        },
+        "relationships": {
+            "defaultView": {
+                "data": {
+                    "id": "product_id",
+                    "type": "label"
+                }
+            },
+            "dataset": {
+                "data": {
+                    "id": "product",
+                    "type": "dataset"
+                }
+            },
+            "labels": {
+                "data": [
+                    {
+                        "id": "product_id",
+                        "type": "label"
+                    },
+                    {
+                        "id": "product_name",
+                        "type": "label"
+                    },
+                    {
+                        "id": "product_id_image_web",
+                        "type": "label"
+                    }
+                ]
+            }
+        },
+        "links": {
+            "self": "https://ach.internal.cloud.gooddata.com/api/v1/entities/workspaces/gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1/attributes/product_id"
+        },
+        "meta": {
+            "origin": {
+                "originType": "NATIVE",
+                "originId": "gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1"
+            }
+        }
+    },
+    {
+        "id": "product_image",
+        "type": "attribute",
+        "attributes": {
+            "title": "Product image",
+            "description": "Product image",
+            "tags": [
+                "Product"
+            ],
+            "sourceColumn": "product_image",
+            "sourceColumnDataType": "STRING"
+        },
+        "relationships": {
+            "defaultView": {
+                "data": {
+                    "id": "product_image",
+                    "type": "label"
+                }
+            },
+            "dataset": {
+                "data": {
+                    "id": "product",
+                    "type": "dataset"
+                }
+            },
+            "labels": {
+                "data": [
+                    {
+                        "id": "product_image",
+                        "type": "label"
+                    },
+                    {
+                        "id": "product_image_web",
+                        "type": "label"
+                    }
+                ]
+            }
+        },
+        "links": {
+            "self": "https://ach.internal.cloud.gooddata.com/api/v1/entities/workspaces/gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1/attributes/product_image"
+        },
+        "meta": {
+            "origin": {
+                "originType": "NATIVE",
+                "originId": "gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1"
+            }
+        }
+    },
+    {
+        "id": "product_rating",
+        "type": "attribute",
+        "attributes": {
+            "title": "Product rating",
+            "description": "Product rating",
+            "tags": [
+                "Product"
+            ],
+            "sourceColumn": "product_rating",
+            "sourceColumnDataType": "STRING"
+        },
+        "relationships": {
+            "dataset": {
+                "data": {
+                    "id": "product",
+                    "type": "dataset"
+                }
+            },
+            "labels": {
+                "data": [
+                    {
+                        "id": "product_rating",
+                        "type": "label"
+                    }
+                ]
+            }
+        },
+        "links": {
+            "self": "https://ach.internal.cloud.gooddata.com/api/v1/entities/workspaces/gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1/attributes/product_rating"
+        },
+        "meta": {
+            "origin": {
+                "originType": "NATIVE",
+                "originId": "gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1"
+            }
+        }
+    },
+    {
+        "id": "return_date.day",
+        "type": "attribute",
+        "attributes": {
+            "title": "Return date - Date",
+            "description": "Date",
+            "tags": [
+                "Return date"
+            ],
+            "granularity": "DAY"
+        },
+        "relationships": {
+            "dataset": {
+                "data": {
+                    "id": "return_date",
+                    "type": "dataset"
+                }
+            },
+            "labels": {
+                "data": [
+                    {
+                        "id": "return_date.day",
+                        "type": "label"
+                    }
+                ]
+            }
+        },
+        "links": {
+            "self": "https://ach.internal.cloud.gooddata.com/api/v1/entities/workspaces/gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1/attributes/return_date.day"
+        },
+        "meta": {
+            "origin": {
+                "originType": "NATIVE",
+                "originId": "gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1"
+            }
+        }
+    },
+    {
+        "id": "return_date.dayOfMonth",
+        "type": "attribute",
+        "attributes": {
+            "title": "Return date - Day of Month",
+            "description": "Generic Day of the Month (D1-D31)",
+            "tags": [
+                "Return date"
+            ],
+            "granularity": "DAY_OF_MONTH"
+        },
+        "relationships": {
+            "dataset": {
+                "data": {
+                    "id": "return_date",
+                    "type": "dataset"
+                }
+            },
+            "labels": {
+                "data": [
+                    {
+                        "id": "return_date.dayOfMonth",
+                        "type": "label"
+                    }
+                ]
+            }
+        },
+        "links": {
+            "self": "https://ach.internal.cloud.gooddata.com/api/v1/entities/workspaces/gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1/attributes/return_date.dayOfMonth"
+        },
+        "meta": {
+            "origin": {
+                "originType": "NATIVE",
+                "originId": "gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1"
+            }
+        }
+    },
+    {
+        "id": "return_date.dayOfWeek",
+        "type": "attribute",
+        "attributes": {
+            "title": "Return date - Day of Week",
+            "description": "Generic Day of the Week (D1-D7)",
+            "tags": [
+                "Return date"
+            ],
+            "granularity": "DAY_OF_WEEK"
+        },
+        "relationships": {
+            "dataset": {
+                "data": {
+                    "id": "return_date",
+                    "type": "dataset"
+                }
+            },
+            "labels": {
+                "data": [
+                    {
+                        "id": "return_date.dayOfWeek",
+                        "type": "label"
+                    }
+                ]
+            }
+        },
+        "links": {
+            "self": "https://ach.internal.cloud.gooddata.com/api/v1/entities/workspaces/gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1/attributes/return_date.dayOfWeek"
+        },
+        "meta": {
+            "origin": {
+                "originType": "NATIVE",
+                "originId": "gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1"
+            }
+        }
+    },
+    {
+        "id": "return_date.dayOfYear",
+        "type": "attribute",
+        "attributes": {
+            "title": "Return date - Day of Year",
+            "description": "Generic Day of the Year (D1-D366)",
+            "tags": [
+                "Return date"
+            ],
+            "granularity": "DAY_OF_YEAR"
+        },
+        "relationships": {
+            "dataset": {
+                "data": {
+                    "id": "return_date",
+                    "type": "dataset"
+                }
+            },
+            "labels": {
+                "data": [
+                    {
+                        "id": "return_date.dayOfYear",
+                        "type": "label"
+                    }
+                ]
+            }
+        },
+        "links": {
+            "self": "https://ach.internal.cloud.gooddata.com/api/v1/entities/workspaces/gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1/attributes/return_date.dayOfYear"
+        },
+        "meta": {
+            "origin": {
+                "originType": "NATIVE",
+                "originId": "gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1"
+            }
+        }
+    },
+    {
+        "id": "return_date.hour",
+        "type": "attribute",
+        "attributes": {
+            "title": "Return date - Hour",
+            "description": "Hour",
+            "tags": [
+                "Return date"
+            ],
+            "granularity": "HOUR"
+        },
+        "relationships": {
+            "dataset": {
+                "data": {
+                    "id": "return_date",
+                    "type": "dataset"
+                }
+            },
+            "labels": {
+                "data": [
+                    {
+                        "id": "return_date.hour",
+                        "type": "label"
+                    }
+                ]
+            }
+        },
+        "links": {
+            "self": "https://ach.internal.cloud.gooddata.com/api/v1/entities/workspaces/gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1/attributes/return_date.hour"
+        },
+        "meta": {
+            "origin": {
+                "originType": "NATIVE",
+                "originId": "gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1"
+            }
+        }
+    },
+    {
+        "id": "return_date.hourOfDay",
+        "type": "attribute",
+        "attributes": {
+            "title": "Return date - Hour of Day",
+            "description": "Generic Hour of the Day(H1-H24)",
+            "tags": [
+                "Return date"
+            ],
+            "granularity": "HOUR_OF_DAY"
+        },
+        "relationships": {
+            "dataset": {
+                "data": {
+                    "id": "return_date",
+                    "type": "dataset"
+                }
+            },
+            "labels": {
+                "data": [
+                    {
+                        "id": "return_date.hourOfDay",
+                        "type": "label"
+                    }
+                ]
+            }
+        },
+        "links": {
+            "self": "https://ach.internal.cloud.gooddata.com/api/v1/entities/workspaces/gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1/attributes/return_date.hourOfDay"
+        },
+        "meta": {
+            "origin": {
+                "originType": "NATIVE",
+                "originId": "gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1"
+            }
+        }
+    },
+    {
+        "id": "return_date.minute",
+        "type": "attribute",
+        "attributes": {
+            "title": "Return date - Minute",
+            "description": "Minute",
+            "tags": [
+                "Return date"
+            ],
+            "granularity": "MINUTE"
+        },
+        "relationships": {
+            "dataset": {
+                "data": {
+                    "id": "return_date",
+                    "type": "dataset"
+                }
+            },
+            "labels": {
+                "data": [
+                    {
+                        "id": "return_date.minute",
+                        "type": "label"
+                    }
+                ]
+            }
+        },
+        "links": {
+            "self": "https://ach.internal.cloud.gooddata.com/api/v1/entities/workspaces/gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1/attributes/return_date.minute"
+        },
+        "meta": {
+            "origin": {
+                "originType": "NATIVE",
+                "originId": "gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1"
+            }
+        }
+    },
+    {
+        "id": "return_date.minuteOfHour",
+        "type": "attribute",
+        "attributes": {
+            "title": "Return date - Minute of Hour",
+            "description": "Generic Minute of the Hour(MI1-MI60)",
+            "tags": [
+                "Return date"
+            ],
+            "granularity": "MINUTE_OF_HOUR"
+        },
+        "relationships": {
+            "dataset": {
+                "data": {
+                    "id": "return_date",
+                    "type": "dataset"
+                }
+            },
+            "labels": {
+                "data": [
+                    {
+                        "id": "return_date.minuteOfHour",
+                        "type": "label"
+                    }
+                ]
+            }
+        },
+        "links": {
+            "self": "https://ach.internal.cloud.gooddata.com/api/v1/entities/workspaces/gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1/attributes/return_date.minuteOfHour"
+        },
+        "meta": {
+            "origin": {
+                "originType": "NATIVE",
+                "originId": "gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1"
+            }
+        }
+    },
+    {
+        "id": "return_date.month",
+        "type": "attribute",
+        "attributes": {
+            "title": "Return date - Month/Year",
+            "description": "Month and Year (12/2020)",
+            "tags": [
+                "Return date"
+            ],
+            "granularity": "MONTH"
+        },
+        "relationships": {
+            "dataset": {
+                "data": {
+                    "id": "return_date",
+                    "type": "dataset"
+                }
+            },
+            "labels": {
+                "data": [
+                    {
+                        "id": "return_date.month",
+                        "type": "label"
+                    }
+                ]
+            }
+        },
+        "links": {
+            "self": "https://ach.internal.cloud.gooddata.com/api/v1/entities/workspaces/gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1/attributes/return_date.month"
+        },
+        "meta": {
+            "origin": {
+                "originType": "NATIVE",
+                "originId": "gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1"
+            }
+        }
+    },
+    {
+        "id": "return_date.monthOfYear",
+        "type": "attribute",
+        "attributes": {
+            "title": "Return date - Month of Year",
+            "description": "Generic Month (M1-M12)",
+            "tags": [
+                "Return date"
+            ],
+            "granularity": "MONTH_OF_YEAR"
+        },
+        "relationships": {
+            "dataset": {
+                "data": {
+                    "id": "return_date",
+                    "type": "dataset"
+                }
+            },
+            "labels": {
+                "data": [
+                    {
+                        "id": "return_date.monthOfYear",
+                        "type": "label"
+                    }
+                ]
+            }
+        },
+        "links": {
+            "self": "https://ach.internal.cloud.gooddata.com/api/v1/entities/workspaces/gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1/attributes/return_date.monthOfYear"
+        },
+        "meta": {
+            "origin": {
+                "originType": "NATIVE",
+                "originId": "gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1"
+            }
+        }
+    },
+    {
+        "id": "return_date.quarter",
+        "type": "attribute",
+        "attributes": {
+            "title": "Return date - Quarter/Year",
+            "description": "Quarter and Year (Q1/2020)",
+            "tags": [
+                "Return date"
+            ],
+            "granularity": "QUARTER"
+        },
+        "relationships": {
+            "dataset": {
+                "data": {
+                    "id": "return_date",
+                    "type": "dataset"
+                }
+            },
+            "labels": {
+                "data": [
+                    {
+                        "id": "return_date.quarter",
+                        "type": "label"
+                    }
+                ]
+            }
+        },
+        "links": {
+            "self": "https://ach.internal.cloud.gooddata.com/api/v1/entities/workspaces/gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1/attributes/return_date.quarter"
+        },
+        "meta": {
+            "origin": {
+                "originType": "NATIVE",
+                "originId": "gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1"
+            }
+        }
+    },
+    {
+        "id": "return_date.quarterOfYear",
+        "type": "attribute",
+        "attributes": {
+            "title": "Return date - Quarter of Year",
+            "description": "Generic Quarter (Q1-Q4)",
+            "tags": [
+                "Return date"
+            ],
+            "granularity": "QUARTER_OF_YEAR"
+        },
+        "relationships": {
+            "dataset": {
+                "data": {
+                    "id": "return_date",
+                    "type": "dataset"
+                }
+            },
+            "labels": {
+                "data": [
+                    {
+                        "id": "return_date.quarterOfYear",
+                        "type": "label"
+                    }
+                ]
+            }
+        },
+        "links": {
+            "self": "https://ach.internal.cloud.gooddata.com/api/v1/entities/workspaces/gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1/attributes/return_date.quarterOfYear"
+        },
+        "meta": {
+            "origin": {
+                "originType": "NATIVE",
+                "originId": "gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1"
+            }
+        }
+    },
+    {
+        "id": "return_date.week",
+        "type": "attribute",
+        "attributes": {
+            "title": "Return date - Week/Year",
+            "description": "Week and Year (W52/2020)",
+            "tags": [
+                "Return date"
+            ],
+            "granularity": "WEEK"
+        },
+        "relationships": {
+            "dataset": {
+                "data": {
+                    "id": "return_date",
+                    "type": "dataset"
+                }
+            },
+            "labels": {
+                "data": [
+                    {
+                        "id": "return_date.week",
+                        "type": "label"
+                    }
+                ]
+            }
+        },
+        "links": {
+            "self": "https://ach.internal.cloud.gooddata.com/api/v1/entities/workspaces/gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1/attributes/return_date.week"
+        },
+        "meta": {
+            "origin": {
+                "originType": "NATIVE",
+                "originId": "gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1"
+            }
+        }
+    },
+    {
+        "id": "return_date.weekOfYear",
+        "type": "attribute",
+        "attributes": {
+            "title": "Return date - Week of Year",
+            "description": "Generic Week (W1-W53)",
+            "tags": [
+                "Return date"
+            ],
+            "granularity": "WEEK_OF_YEAR"
+        },
+        "relationships": {
+            "dataset": {
+                "data": {
+                    "id": "return_date",
+                    "type": "dataset"
+                }
+            },
+            "labels": {
+                "data": [
+                    {
+                        "id": "return_date.weekOfYear",
+                        "type": "label"
+                    }
+                ]
+            }
+        },
+        "links": {
+            "self": "https://ach.internal.cloud.gooddata.com/api/v1/entities/workspaces/gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1/attributes/return_date.weekOfYear"
+        },
+        "meta": {
+            "origin": {
+                "originType": "NATIVE",
+                "originId": "gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1"
+            }
+        }
+    },
+    {
+        "id": "return_date.year",
+        "type": "attribute",
+        "attributes": {
+            "title": "Return date - Year",
+            "description": "Year",
+            "tags": [
+                "Return date"
+            ],
+            "granularity": "YEAR"
+        },
+        "relationships": {
+            "dataset": {
+                "data": {
+                    "id": "return_date",
+                    "type": "dataset"
+                }
+            },
+            "labels": {
+                "data": [
+                    {
+                        "id": "return_date.year",
+                        "type": "label"
+                    }
+                ]
+            }
+        },
+        "links": {
+            "self": "https://ach.internal.cloud.gooddata.com/api/v1/entities/workspaces/gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1/attributes/return_date.year"
+        },
+        "meta": {
+            "origin": {
+                "originType": "NATIVE",
+                "originId": "gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1"
+            }
+        }
+    },
+    {
+        "id": "return_id",
+        "type": "attribute",
+        "attributes": {
+            "title": "Return id",
+            "description": "Return id",
+            "tags": [
+                "Returns"
+            ],
+            "sourceColumn": "return_id",
+            "sourceColumnDataType": "STRING"
+        },
+        "relationships": {
+            "dataset": {
+                "data": {
+                    "id": "returns",
+                    "type": "dataset"
+                }
+            },
+            "labels": {
+                "data": [
+                    {
+                        "id": "return_id",
+                        "type": "label"
+                    }
+                ]
+            }
+        },
+        "links": {
+            "self": "https://ach.internal.cloud.gooddata.com/api/v1/entities/workspaces/gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1/attributes/return_id"
+        },
+        "meta": {
+            "origin": {
+                "originType": "NATIVE",
+                "originId": "gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1"
+            }
+        }
+    }
+]

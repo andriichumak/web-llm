@@ -1,0 +1,807 @@
+[
+  {
+    "id": "active_customers",
+    "type": "metric",
+    "attributes": {
+      "title": "Active Customers",
+      "description": "Number of customers that transacted",
+      "areRelationsValid": true,
+      "createdAt": "2024-03-27 14:48",
+      "content": {
+        "format": "#,##0",
+        "maql": "SELECT IFNULL(COUNT({label/customer_id}, {label/order_line_id}),0)"
+      }
+    },
+    "links": {
+      "self": "https://ach.internal.cloud.gooddata.com/api/v1/entities/workspaces/gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1/metrics/active_customers"
+    },
+    "meta": {
+      "origin": {
+        "originType": "NATIVE",
+        "originId": "gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1"
+      }
+    }
+  },
+  {
+    "id": "arpu",
+    "type": "metric",
+    "attributes": {
+      "title": "ARPU",
+      "description": "Average revenue per user",
+      "areRelationsValid": true,
+      "createdAt": "2024-03-27 14:48",
+      "content": {
+        "format": "[>=1000000000000]$#,,,,.0 T;\n[>=1000000000]$#,,,.0 B;\n[>=1000000]$#,,.0 M;\n[>=1000]$#,.0 K;\n[>=0]$#,##0;\n[<=-1000000000000]-$#,,,,.0 T;\n[<=-1000000000]-$#,,,.0 B;\n[<=-1000000]-$#,,.0 M;\n[<=-1000]-$#,.0 K;\n[<0]-$#,##0",
+        "maql": "SELECT {metric/net_sales}/{metric/active_customers}"
+      }
+    },
+    "links": {
+      "self": "https://ach.internal.cloud.gooddata.com/api/v1/entities/workspaces/gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1/metrics/arpu"
+    },
+    "meta": {
+      "origin": {
+        "originType": "NATIVE",
+        "originId": "gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1"
+      }
+    }
+  },
+  {
+    "id": "average_price_of_products",
+    "type": "metric",
+    "attributes": {
+      "title": "Average Price of Products",
+      "description": "",
+      "areRelationsValid": true,
+      "createdAt": "2024-03-27 14:48",
+      "content": {
+        "format": "$#,##0.00",
+        "maql": "SELECT AVG({fact/order_unit_price})"
+      }
+    },
+    "links": {
+      "self": "https://ach.internal.cloud.gooddata.com/api/v1/entities/workspaces/gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1/metrics/average_price_of_products"
+    },
+    "meta": {
+      "origin": {
+        "originType": "NATIVE",
+        "originId": "gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1"
+      }
+    }
+  },
+  {
+    "id": "average_product_cost",
+    "type": "metric",
+    "attributes": {
+      "title": "Average Product Cost",
+      "description": "",
+      "areRelationsValid": true,
+      "createdAt": "2024-03-27 14:48",
+      "content": {
+        "format": "$#,##0.00",
+        "maql": "SELECT AVG({fact/order_unit_cost})"
+      }
+    },
+    "links": {
+      "self": "https://ach.internal.cloud.gooddata.com/api/v1/entities/workspaces/gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1/metrics/average_product_cost"
+    },
+    "meta": {
+      "origin": {
+        "originType": "NATIVE",
+        "originId": "gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1"
+      }
+    }
+  },
+  {
+    "id": "average_product_list_price",
+    "type": "metric",
+    "attributes": {
+      "title": "Average Product List Price",
+      "description": "",
+      "areRelationsValid": true,
+      "createdAt": "2024-03-27 14:48",
+      "content": {
+        "format": "$#,##0.00",
+        "maql": "SELECT AVG({fact/order_unit_price})"
+      }
+    },
+    "links": {
+      "self": "https://ach.internal.cloud.gooddata.com/api/v1/entities/workspaces/gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1/metrics/average_product_list_price"
+    },
+    "meta": {
+      "origin": {
+        "originType": "NATIVE",
+        "originId": "gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1"
+      }
+    }
+  },
+  {
+    "id": "cogs",
+    "type": "metric",
+    "attributes": {
+      "title": "COGS",
+      "description": "",
+      "areRelationsValid": true,
+      "createdAt": "2024-03-27 14:48",
+      "content": {
+        "format": "#,##0",
+        "maql": "SELECT  IFNULL({metric/cogs_orders},0) - IFNULL({metric/cogs_returns},0)"
+      }
+    },
+    "links": {
+      "self": "https://ach.internal.cloud.gooddata.com/api/v1/entities/workspaces/gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1/metrics/cogs"
+    },
+    "meta": {
+      "origin": {
+        "originType": "NATIVE",
+        "originId": "gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1"
+      }
+    }
+  },
+  {
+    "id": "cogs_orders",
+    "type": "metric",
+    "attributes": {
+      "title": "COGS [Orders]",
+      "description": "Cost of goods sold",
+      "areRelationsValid": true,
+      "createdAt": "2024-03-27 14:48",
+      "content": {
+        "format": "$#,##0.00",
+        "maql": "SELECT SUM({fact/order_unit_cost}*{fact/order_unit_quantity}) WHERE {label/order_status} = \"Processed\""
+      }
+    },
+    "links": {
+      "self": "https://ach.internal.cloud.gooddata.com/api/v1/entities/workspaces/gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1/metrics/cogs_orders"
+    },
+    "meta": {
+      "origin": {
+        "originType": "NATIVE",
+        "originId": "gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1"
+      }
+    }
+  },
+  {
+    "id": "cogs_returns",
+    "type": "metric",
+    "attributes": {
+      "title": "COGS [Returns]",
+      "description": "Cost of goods returned",
+      "areRelationsValid": true,
+      "createdAt": "2024-03-27 14:48",
+      "content": {
+        "format": "$#,##0.00",
+        "maql": "SELECT SUM({fact/return_unit_cost}*{fact/return_unit_quantity})"
+      }
+    },
+    "links": {
+      "self": "https://ach.internal.cloud.gooddata.com/api/v1/entities/workspaces/gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1/metrics/cogs_returns"
+    },
+    "meta": {
+      "origin": {
+        "originType": "NATIVE",
+        "originId": "gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1"
+      }
+    }
+  },
+  {
+    "id": "customers_w_processed_orders",
+    "type": "metric",
+    "attributes": {
+      "title": "Customers w/ Processed Orders",
+      "description": "Number of customers that transacted",
+      "areRelationsValid": true,
+      "createdAt": "2024-03-27 14:48",
+      "content": {
+        "format": "#,##0",
+        "maql": "SELECT {metric/active_customers} WHERE {label/order_status} = \"Processed\""
+      }
+    },
+    "links": {
+      "self": "https://ach.internal.cloud.gooddata.com/api/v1/entities/workspaces/gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1/metrics/customers_w_processed_orders"
+    },
+    "meta": {
+      "origin": {
+        "originType": "NATIVE",
+        "originId": "gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1"
+      }
+    }
+  },
+  {
+    "id": "delivered",
+    "type": "metric",
+    "attributes": {
+      "title": "Delivered",
+      "description": "",
+      "areRelationsValid": true,
+      "createdAt": "2024-03-27 14:48",
+      "content": {
+        "format": "#,##0.00",
+        "maql": "SELECT (select {metric/of_orders}WHERE {label/order_status} = \"Processed\") - (select {metric/of_orders} WHERE {label/order_status} = \"Canceled\")"
+      }
+    },
+    "links": {
+      "self": "https://ach.internal.cloud.gooddata.com/api/v1/entities/workspaces/gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1/metrics/delivered"
+    },
+    "meta": {
+      "origin": {
+        "originType": "NATIVE",
+        "originId": "gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1"
+      }
+    }
+  },
+  {
+    "id": "gross_profit",
+    "type": "metric",
+    "attributes": {
+      "title": "Gross Profit",
+      "description": "Net sales adjusted by the cost of goods sold",
+      "areRelationsValid": true,
+      "createdAt": "2024-03-27 14:48",
+      "content": {
+        "format": "[>=1000000000000]$#,,,,.0 T;\n[>=1000000000]$#,,,.0 B;\n[>=1000000]$#,,.0 M;\n[>=1000]$#,.0 K;\n[>=0]$#,##0;\n[<=-1000000000000]-$#,,,,.0 T;\n[<=-1000000000]-$#,,,.0 B;\n[<=-1000000]-$#,,.0 M;\n[<=-1000]-$#,.0 K;\n[<0]-$#,##0",
+        "maql": "SELECT {metric/net_sales} - {metric/cogs}"
+      }
+    },
+    "links": {
+      "self": "https://ach.internal.cloud.gooddata.com/api/v1/entities/workspaces/gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1/metrics/gross_profit"
+    },
+    "meta": {
+      "origin": {
+        "originType": "NATIVE",
+        "originId": "gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1"
+      }
+    }
+  },
+  {
+    "id": "gross_profit_margin",
+    "type": "metric",
+    "attributes": {
+      "title": "Gross Profit Margin",
+      "description": "How much of each $1 of sales is left over for other things after accounting for the costs of the products",
+      "areRelationsValid": true,
+      "createdAt": "2024-03-27 14:48",
+      "content": {
+        "format": "#,##0%",
+        "maql": "SELECT {metric/gross_profit}/{metric/net_sales}"
+      }
+    },
+    "links": {
+      "self": "https://ach.internal.cloud.gooddata.com/api/v1/entities/workspaces/gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1/metrics/gross_profit_margin"
+    },
+    "meta": {
+      "origin": {
+        "originType": "NATIVE",
+        "originId": "gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1"
+      }
+    }
+  },
+  {
+    "id": "negative_total_discounts",
+    "type": "metric",
+    "attributes": {
+      "title": "Total Discounts N",
+      "description": "",
+      "areRelationsValid": true,
+      "createdAt": "2024-03-27 14:48",
+      "content": {
+        "format": "#,##0.00",
+        "maql": "SELECT -1 * {metric/total_discounts}"
+      }
+    },
+    "links": {
+      "self": "https://ach.internal.cloud.gooddata.com/api/v1/entities/workspaces/gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1/metrics/negative_total_discounts"
+    },
+    "meta": {
+      "origin": {
+        "originType": "NATIVE",
+        "originId": "gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1"
+      }
+    }
+  },
+  {
+    "id": "negative_total_return",
+    "type": "metric",
+    "attributes": {
+      "title": "Total Returns N",
+      "description": "",
+      "areRelationsValid": true,
+      "createdAt": "2024-03-27 14:48",
+      "content": {
+        "format": "#,##0.00",
+        "maql": "SELECT -1*{metric/total_returns}"
+      }
+    },
+    "links": {
+      "self": "https://ach.internal.cloud.gooddata.com/api/v1/entities/workspaces/gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1/metrics/negative_total_return"
+    },
+    "meta": {
+      "origin": {
+        "originType": "NATIVE",
+        "originId": "gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1"
+      }
+    }
+  },
+  {
+    "id": "net_orders",
+    "type": "metric",
+    "attributes": {
+      "title": "Net Orders",
+      "description": "Total number of orders that have been processed",
+      "areRelationsValid": true,
+      "createdAt": "2024-03-27 14:48",
+      "content": {
+        "format": "#,##0",
+        "maql": "SELECT {metric/of_orders} WHERE {label/order_status} = \"Processed\""
+      }
+    },
+    "links": {
+      "self": "https://ach.internal.cloud.gooddata.com/api/v1/entities/workspaces/gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1/metrics/net_orders"
+    },
+    "meta": {
+      "origin": {
+        "originType": "NATIVE",
+        "originId": "gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1"
+      }
+    }
+  },
+  {
+    "id": "net_sales",
+    "type": "metric",
+    "attributes": {
+      "title": "Net Sales",
+      "description": "The sum of all transacted orders adjusted by discounts and returns",
+      "areRelationsValid": true,
+      "createdAt": "2024-03-27 14:48",
+      "content": {
+        "format": "[>=1000000000000]$#,,,,.0 T;\n[>=1000000000]$#,,,.0 B;\n[>=1000000]$#,,.0 M;\n[>=1000]$#,.0 K;\n[>=0]$#,##0;\n[<=-1000000000000]-$#,,,,.0 T;\n[<=-1000000000]-$#,,,.0 B;\n[<=-1000000]-$#,,.0 M;\n[<=-1000]-$#,.0 K;\n[<0]-$#,##0",
+        "maql": "SELECT {metric/total_sales} - IFNULL({metric/total_discounts}, 0) - IFNULL({metric/total_returns},0)"
+      }
+    },
+    "links": {
+      "self": "https://ach.internal.cloud.gooddata.com/api/v1/entities/workspaces/gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1/metrics/net_sales"
+    },
+    "meta": {
+      "origin": {
+        "originType": "NATIVE",
+        "originId": "gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1"
+      }
+    }
+  },
+  {
+    "id": "net_sales_goal",
+    "type": "metric",
+    "attributes": {
+      "title": "Net Sales Goal",
+      "description": "",
+      "areRelationsValid": true,
+      "createdAt": "2024-03-27 14:48",
+      "content": {
+        "format": "[>=1000000000000]$#,,,,.0 T;\n[>=1000000000]$#,,,.0 B;\n[>=1000000]$#,,.0 M;\n[>=1000]$#,.0 K;\n[>=0]$#,##0;\n[<=-1000000000000]-$#,,,,.0 T;\n[<=-1000000000]-$#,,,.0 B;\n[<=-1000000]-$#,,.0 M;\n[<=-1000]-$#,.0 K;\n[<0]-$#,##0",
+        "maql": "SELECT (SELECT {metric/net_sales} FOR PreviousPeriod({label/date.day})) * 1.1"
+      }
+    },
+    "links": {
+      "self": "https://ach.internal.cloud.gooddata.com/api/v1/entities/workspaces/gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1/metrics/net_sales_goal"
+    },
+    "meta": {
+      "origin": {
+        "originType": "NATIVE",
+        "originId": "gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1"
+      }
+    }
+  },
+  {
+    "id": "new_customers",
+    "type": "metric",
+    "attributes": {
+      "title": "New Customers",
+      "description": "Customers that placed their first order within the selected time period. Assumption is that all customers place their first order on the date their account is created.",
+      "areRelationsValid": true,
+      "createdAt": "2024-03-27 14:48",
+      "content": {
+        "format": "#,##0",
+        "maql": "SELECT {metric/active_customers} WHERE \n(SELECT COUNT({label/order_id}) BY {label/customer_id} WHERE {label/order_date.day} = {label/customer_created_date.day}) > 0"
+      }
+    },
+    "links": {
+      "self": "https://ach.internal.cloud.gooddata.com/api/v1/entities/workspaces/gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1/metrics/new_customers"
+    },
+    "meta": {
+      "origin": {
+        "originType": "NATIVE",
+        "originId": "gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1"
+      }
+    }
+  },
+  {
+    "id": "new_customers_monthly",
+    "type": "metric",
+    "attributes": {
+      "title": "New Customers Monthly",
+      "description": "Number of new customers. Needs to be broken down by date Month/Year",
+      "areRelationsValid": true,
+      "createdAt": "2024-03-27 14:48",
+      "content": {
+        "format": "#,##0",
+        "maql": "SELECT {metric/active_customers} - {metric/return_customers_monthly}"
+      }
+    },
+    "links": {
+      "self": "https://ach.internal.cloud.gooddata.com/api/v1/entities/workspaces/gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1/metrics/new_customers_monthly"
+    },
+    "meta": {
+      "origin": {
+        "originType": "NATIVE",
+        "originId": "gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1"
+      }
+    }
+  },
+  {
+    "id": "of_net_sales",
+    "type": "metric",
+    "attributes": {
+      "title": "% of Net Sales",
+      "description": "",
+      "areRelationsValid": true,
+      "createdAt": "2024-03-27 14:48",
+      "content": {
+        "format": "#,##0.0%",
+        "maql": "SELECT {metric/net_sales} / (SELECT {metric/net_sales} BY ALL OTHER WITHOUT PF)"
+      }
+    },
+    "links": {
+      "self": "https://ach.internal.cloud.gooddata.com/api/v1/entities/workspaces/gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1/metrics/of_net_sales"
+    },
+    "meta": {
+      "origin": {
+        "originType": "NATIVE",
+        "originId": "gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1"
+      }
+    }
+  },
+  {
+    "id": "of_orders",
+    "type": "metric",
+    "attributes": {
+      "title": "# of Orders",
+      "description": "Total number of orders in any status",
+      "areRelationsValid": true,
+      "createdAt": "2024-03-27 14:48",
+      "content": {
+        "format": "#,##0",
+        "maql": "SELECT COUNT({label/order_id},{label/order_line_id})"
+      }
+    },
+    "links": {
+      "self": "https://ach.internal.cloud.gooddata.com/api/v1/entities/workspaces/gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1/metrics/of_orders"
+    },
+    "meta": {
+      "origin": {
+        "originType": "NATIVE",
+        "originId": "gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1"
+      }
+    }
+  },
+  {
+    "id": "of_orders_1",
+    "type": "metric",
+    "attributes": {
+      "title": "# of Single Orders",
+      "description": "",
+      "areRelationsValid": true,
+      "createdAt": "2024-03-27 14:48",
+      "content": {
+        "format": "#,##0",
+        "maql": "SELECT SUM({metric/total_customers}) WHERE {metric/of_orders} = 1"
+      }
+    },
+    "links": {
+      "self": "https://ach.internal.cloud.gooddata.com/api/v1/entities/workspaces/gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1/metrics/of_orders_1"
+    },
+    "meta": {
+      "origin": {
+        "originType": "NATIVE",
+        "originId": "gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1"
+      }
+    }
+  },
+  {
+    "id": "of_orders_by_customer",
+    "type": "metric",
+    "attributes": {
+      "title": "# of Orders by Customer",
+      "description": "",
+      "areRelationsValid": true,
+      "createdAt": "2024-03-27 14:48",
+      "content": {
+        "format": "#,##0.00",
+        "maql": "SELECT SUM({metric/of_orders}) BY {dataset/customer}"
+      }
+    },
+    "links": {
+      "self": "https://ach.internal.cloud.gooddata.com/api/v1/entities/workspaces/gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1/metrics/of_orders_by_customer"
+    },
+    "meta": {
+      "origin": {
+        "originType": "NATIVE",
+        "originId": "gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1"
+      }
+    }
+  },
+  {
+    "id": "order_amount",
+    "type": "metric",
+    "attributes": {
+      "title": "Order Amount",
+      "description": "Total order amount irrespective of order status",
+      "areRelationsValid": true,
+      "createdAt": "2024-03-27 14:48",
+      "content": {
+        "format": "[>=1000000000000]$#,,,,.0 T;\n[>=1000000000]$#,,,.0 B;\n[>=1000000]$#,,.0 M;\n[>=1000]$#,.0 K;\n[>=0]$#,##0;\n[<=-1000000000000]-$#,,,,.0 T;\n[<=-1000000000]-$#,,,.0 B;\n[<=-1000000]-$#,,.0 M;\n[<=-1000]-$#,.0 K;\n[<0]-$#,##0",
+        "maql": "SELECT SUM({fact/order_unit_quantity}*{fact/order_unit_price})"
+      }
+    },
+    "links": {
+      "self": "https://ach.internal.cloud.gooddata.com/api/v1/entities/workspaces/gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1/metrics/order_amount"
+    },
+    "meta": {
+      "origin": {
+        "originType": "NATIVE",
+        "originId": "gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1"
+      }
+    }
+  },
+  {
+    "id": "orders_all_time",
+    "type": "metric",
+    "attributes": {
+      "title": "Orders all time",
+      "description": "",
+      "areRelationsValid": true,
+      "createdAt": "2024-03-27 14:48",
+      "content": {
+        "format": "#,##0",
+        "maql": "SELECT {metric/of_orders} without pf"
+      }
+    },
+    "links": {
+      "self": "https://ach.internal.cloud.gooddata.com/api/v1/entities/workspaces/gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1/metrics/orders_all_time"
+    },
+    "meta": {
+      "origin": {
+        "originType": "NATIVE",
+        "originId": "gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1"
+      }
+    }
+  },
+  {
+    "id": "product_rating",
+    "type": "metric",
+    "attributes": {
+      "title": "Product Rating",
+      "description": "",
+      "areRelationsValid": true,
+      "createdAt": "2024-03-27 14:48",
+      "content": {
+        "format": "#,##0.0",
+        "maql": "SELECT AVG({fact/rating})"
+      }
+    },
+    "links": {
+      "self": "https://ach.internal.cloud.gooddata.com/api/v1/entities/workspaces/gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1/metrics/product_rating"
+    },
+    "meta": {
+      "origin": {
+        "originType": "NATIVE",
+        "originId": "gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1"
+      }
+    }
+  },
+  {
+    "id": "return_customers",
+    "type": "metric",
+    "attributes": {
+      "title": "Return Customers",
+      "description": "",
+      "areRelationsValid": true,
+      "createdAt": "2024-03-27 14:48",
+      "content": {
+        "format": "#,##0",
+        "maql": "SELECT {metric/active_customers} - IFNULL({metric/new_customers},0)"
+      }
+    },
+    "links": {
+      "self": "https://ach.internal.cloud.gooddata.com/api/v1/entities/workspaces/gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1/metrics/return_customers"
+    },
+    "meta": {
+      "origin": {
+        "originType": "NATIVE",
+        "originId": "gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1"
+      }
+    }
+  },
+  {
+    "id": "return_customers_monthly",
+    "type": "metric",
+    "attributes": {
+      "title": "Return Customers Monthly",
+      "description": "Customers that registered in one of the previous months. Needs to be broken down by date Month/Year.",
+      "areRelationsValid": true,
+      "createdAt": "2024-03-27 14:48",
+      "content": {
+        "format": "#,##0",
+        "maql": "SELECT COUNT({label/customer_id}, {label/order_line_id}) \nWHERE {label/customer_created_date.month} < {label/date.month}"
+      }
+    },
+    "links": {
+      "self": "https://ach.internal.cloud.gooddata.com/api/v1/entities/workspaces/gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1/metrics/return_customers_monthly"
+    },
+    "meta": {
+      "origin": {
+        "originType": "NATIVE",
+        "originId": "gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1"
+      }
+    }
+  },
+  {
+    "id": "returns",
+    "type": "metric",
+    "attributes": {
+      "title": "Returns",
+      "description": "",
+      "areRelationsValid": true,
+      "createdAt": "2024-03-27 14:48",
+      "content": {
+        "format": "#,##0",
+        "maql": "select COUNT({label/order_id},{label/return_id})"
+      }
+    },
+    "links": {
+      "self": "https://ach.internal.cloud.gooddata.com/api/v1/entities/workspaces/gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1/metrics/returns"
+    },
+    "meta": {
+      "origin": {
+        "originType": "NATIVE",
+        "originId": "gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1"
+      }
+    }
+  },
+  {
+    "id": "sell_through",
+    "type": "metric",
+    "attributes": {
+      "title": "% Sell Through",
+      "description": "",
+      "areRelationsValid": true,
+      "createdAt": "2024-03-27 14:48",
+      "content": {
+        "format": "#,##0%",
+        "maql": "SELECT SUM({fact/order_unit_quantity}) / (SUM({fact/order_unit_quantity})+SUM({fact/monthly_quantity_bom}))"
+      }
+    },
+    "links": {
+      "self": "https://ach.internal.cloud.gooddata.com/api/v1/entities/workspaces/gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1/metrics/sell_through"
+    },
+    "meta": {
+      "origin": {
+        "originType": "NATIVE",
+        "originId": "gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1"
+      }
+    }
+  },
+  {
+    "id": "total_customers",
+    "type": "metric",
+    "attributes": {
+      "title": "Total Customers",
+      "description": "Total number of customers in the system",
+      "areRelationsValid": true,
+      "createdAt": "2024-03-27 14:48",
+      "content": {
+        "format": "#,##0",
+        "maql": "SELECT COUNT({label/customer_id})"
+      }
+    },
+    "links": {
+      "self": "https://ach.internal.cloud.gooddata.com/api/v1/entities/workspaces/gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1/metrics/total_customers"
+    },
+    "meta": {
+      "origin": {
+        "originType": "NATIVE",
+        "originId": "gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1"
+      }
+    }
+  },
+  {
+    "id": "total_discounts",
+    "type": "metric",
+    "attributes": {
+      "title": "Total Discounts",
+      "description": "The sum of all discounts",
+      "areRelationsValid": true,
+      "createdAt": "2024-03-27 14:48",
+      "content": {
+        "format": "$#,##0.00",
+        "maql": "SELECT SUM({fact/order_unit_discount}) WHERE {label/order_status}= \"Processed\""
+      }
+    },
+    "links": {
+      "self": "https://ach.internal.cloud.gooddata.com/api/v1/entities/workspaces/gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1/metrics/total_discounts"
+    },
+    "meta": {
+      "origin": {
+        "originType": "NATIVE",
+        "originId": "gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1"
+      }
+    }
+  },
+  {
+    "id": "total_listings",
+    "type": "metric",
+    "attributes": {
+      "title": "Total Listings",
+      "description": "",
+      "areRelationsValid": true,
+      "createdAt": "2024-03-27 14:48",
+      "content": {
+        "format": "#,##0",
+        "maql": "SELECT COUNT({label/product_id},{label/order_line_id})"
+      }
+    },
+    "links": {
+      "self": "https://ach.internal.cloud.gooddata.com/api/v1/entities/workspaces/gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1/metrics/total_listings"
+    },
+    "meta": {
+      "origin": {
+        "originType": "NATIVE",
+        "originId": "gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1"
+      }
+    }
+  },
+  {
+    "id": "total_returns",
+    "type": "metric",
+    "attributes": {
+      "title": "Total Returns",
+      "description": "The sum of all returned orders",
+      "areRelationsValid": true,
+      "createdAt": "2024-03-27 14:48",
+      "content": {
+        "format": "$#,##0.00",
+        "maql": "SELECT SUM({fact/return_unit_paid_amount}*{fact/return_unit_quantity})"
+      }
+    },
+    "links": {
+      "self": "https://ach.internal.cloud.gooddata.com/api/v1/entities/workspaces/gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1/metrics/total_returns"
+    },
+    "meta": {
+      "origin": {
+        "originType": "NATIVE",
+        "originId": "gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1"
+      }
+    }
+  },
+  {
+    "id": "total_sales",
+    "type": "metric",
+    "attributes": {
+      "title": "Total Sales",
+      "description": "The sum of all transacted orders",
+      "areRelationsValid": true,
+      "createdAt": "2024-03-27 14:48",
+      "content": {
+        "format": "[>=1000000000000]$#,,,,.0 T;\n[>=1000000000]$#,,,.0 B;\n[>=1000000]$#,,.0 M;\n[>=1000]$#,.0 K;\n[>=0]$#,##0;\n[<=-1000000000000]-$#,,,,.0 T;\n[<=-1000000000]-$#,,,.0 B;\n[<=-1000000]-$#,,.0 M;\n[<=-1000]-$#,.0 K;\n[<0]-$#,##0",
+        "maql": "SELECT {metric/order_amount} WHERE {label/order_status} = \"Processed\""
+      }
+    },
+    "links": {
+      "self": "https://ach.internal.cloud.gooddata.com/api/v1/entities/workspaces/gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1/metrics/total_sales"
+    },
+    "meta": {
+      "origin": {
+        "originType": "NATIVE",
+        "originId": "gdc_demo_f4d50e76-6d2e-4417-8e50-59d4b9d823f1"
+      }
+    }
+  }
+]

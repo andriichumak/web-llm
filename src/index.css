@@ -1,0 +1,12 @@
+html, body {
+    height: auto;
+}
+
+nav .menu>* {
+    margin-right: 1.6em;
+}
+
+article.card {
+    max-width: 600px;
+    margin: 60px auto;
+}
