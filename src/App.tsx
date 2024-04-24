@@ -12,7 +12,7 @@ const Model = models[SELECTED_MODEL];
 const navigate = (e: React.ChangeEvent) => {
     const select = e.target as HTMLSelectElement;
     const selected = select.options[select.selectedIndex].value;
-    window.location.href = `index.${selected}.html`;
+    window.location.href = selected === "HuggingfaceSearchDefault" ? "index.html" : `index.${selected}.html`;
 };
 
 export const App = () => {
