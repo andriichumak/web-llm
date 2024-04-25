@@ -1,7 +1,7 @@
 {
-  "HuggingfaceSearchDefault": "Huggingface Feature Extraction, default model (~23MB)",
-  "HuggingfaceSearchSnowflake": "Huggingface feature-extraction Snowflake/snowflake-arctic-embed-xs (~93MB)",
+  "HuggingfaceSearchDefault": "Huggingface feature-extraction Xenova/all-MiniLM-L6-v2 (~23MB)",
+  "HuggingfaceSearchSnowflake": "Huggingface feature-extraction Snowflake/snowflake-arctic-embed-xs (~23MB)",
   "TensorflowSearchDefault": "Tensorflow universal-sentence-encoder (~28MB)",
-  "HuggingfaceTypeaheadDefault": "Huggingface text-generation default model (~134MB)",
-  "HuggingfaceTypeaheadLlama2": "Huggingface text-generation Xenova/llama2.c-stories15M (~61MB)"
+  "HuggingfaceTypeaheadDefault": "Huggingface text-generation Xenova/gpt2 (~128MB)",
+  "HuggingfaceTypeaheadLlama2": "Huggingface text-generation Xenova/llama2.c-stories15M (~16MB)"
 }

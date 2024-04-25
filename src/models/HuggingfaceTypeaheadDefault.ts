@@ -10,7 +10,9 @@ export class HuggingfaceTypeaheadDefault extends LanguageModel<string> {
 
     async *loadModel() {
         const loadingStart = performance.now();
-        this.model = await pipeline('text-generation');
+        this.model = await pipeline('text-generation', 'Xenova/gpt2', {
+            quantized: true,
+        });
 
         yield {
             title: "Model initialized",

@@ -11,7 +11,9 @@ export class HuggingfaceSearchSnowflake extends LanguageModel<EntryScored[]> {
 
     async *loadModel() {
         const loadingStart = performance.now();
-        const extractor = await pipeline('feature-extraction', "Snowflake/snowflake-arctic-embed-xs");
+        const extractor = await pipeline('feature-extraction', "Snowflake/snowflake-arctic-embed-xs", {
+            quantized: true,
+        });
         this.model = extractor;
 
         yield {

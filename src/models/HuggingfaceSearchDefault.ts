@@ -11,7 +11,9 @@ export class HuggingfaceSearchDefault extends LanguageModel<EntryScored[]> {
 
     async *loadModel() {
         const loadingStart = performance.now();
-        const extractor = await pipeline('feature-extraction');
+        const extractor = await pipeline('feature-extraction', 'Xenova/all-MiniLM-L6-v2', {
+            quantized: true,
+        });
         this.model = extractor;
 
         yield {

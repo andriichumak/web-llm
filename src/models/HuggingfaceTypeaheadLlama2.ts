@@ -10,7 +10,9 @@ export class HuggingfaceTypeaheadLlama2 extends LanguageModel<string> {
 
     async *loadModel() {
         const loadingStart = performance.now();
-        this.model = await pipeline('text-generation', 'Xenova/llama2.c-stories15M');
+        this.model = await pipeline('text-generation', 'Xenova/llama2.c-stories15M', {
+            quantized: true,
+        });
 
         yield {
             title: "Model initialized",

@@ -21,8 +21,9 @@ export const App = () => {
     );
 
     const {
+        startLoading,
         computing,
-        loading,
+        status,
         loadingProgress,
         input,
         setInput,
@@ -43,42 +44,45 @@ export const App = () => {
                 </div>
             </nav>
 
-            {loadingProgress.length ? null : <p>Loading...</p>}
-            {loadingProgress.map((m, i) => <p key={i}><b>{m.title}</b> in {m.time}ms</p>)}
-            {loading ? null : (
-                <footer>
-                    <textarea
-                        value={input}
-                        onChange={e => setInput(e.target.value)}
-                        disabled={computing}
-                    />
-                    {computing ? <p>Computing...</p> : (output?.time ? <p>Computed in {output.time}ms</p> : null)}
-                    {(() => {
-                        if (typeof output?.output === "string") {
-                            return <p>{output.output}</p>;
-                        }
+            <footer>
+                {status === null ? <button onClick={startLoading}>Load</button> : null}
+                {status === "loading" ? <p>Loading...</p> : null}
+                {loadingProgress.map((m, i) => <p key={i}><b>{m.title}</b> in {m.time}ms</p>)}
+                {status !== "loaded" ? null : (
+                    <div>
+                        <textarea
+                            value={input}
+                            onChange={e => setInput(e.target.value)}
+                            disabled={computing}
+                        />
+                        {computing ? <p>Computing...</p> : (output?.time ? <p>Computed in {output.time}ms</p> : null)}
+                        {(() => {
+                            if (typeof output?.output === "string") {
+                                return <p>{output.output}</p>;
+                            }
 
-                        if (Array.isArray(output?.output)) {
-                            return <table className="primary">
-                                <thead>
-                                <tr>
-                                    <th>Title</th>
-                                    <th>Score</th>
-                                </tr>
-                                </thead>
-                                <tbody>
-                                {output.output.map((o, i) => <tr key={i}>
-                                    <td>{o.title}</td>
-                                    <td>{(o as any).score}</td>
-                                </tr>)}
-                                </tbody>
-                            </table>
-                        }
+                            if (Array.isArray(output?.output)) {
+                                return <table className="primary">
+                                    <thead>
+                                    <tr>
+                                        <th>Title</th>
+                                        <th>Score</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    {output.output.map((o, i) => <tr key={i}>
+                                        <td>{o.title}</td>
+                                        <td>{(o as any).score}</td>
+                                    </tr>)}
+                                    </tbody>
+                                </table>
+                            }
 
-                        return null;
-                    })()}
-                </footer>
-            )}
+                            return null;
+                        })()}
+                    </div>
+                )}
+            </footer>
         </article>
     )
 }
